@@ -115,14 +115,14 @@
 	}
 
 	.menu-item-icon {
-		border-radius: 50%;
+		/* border-radius: 50%; */
 		padding: 0.8rem;
 		border: none;
 		background-color: var(--color-analogous-lighter);
 	}
 
 	.menu-item-icon-current {
-		border-radius: 50%;
+		/* border-radius: 50%; */
 		padding: 0.8rem;
 		border: none;
 		background-color: var(--color-alt-background);

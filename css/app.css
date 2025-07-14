@@ -99,8 +99,6 @@ html {
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
-	padding-top: 1rem;
-	padding-left: 1rem;
 }
 
 .menu-item {
@@ -115,7 +113,7 @@ html {
 	font-family: "Montserrat";
 	text-transform: uppercase;
 	background-color: var(--color-primary);
-	border-radius: 1rem;
+	border-radius: 2rem;
 }
 
 .menu-item:hover,
@@ -151,7 +149,7 @@ html {
 	text-transform: uppercase;
 	list-style: none;
 	background-color: var(--color-alt-background);
-	border-radius: 1rem;
+	border-radius: 2rem;
 }
 
 .menu-current {
