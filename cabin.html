@@ -82,42 +82,69 @@
                 </ul>
             </nav>
 
-            <main class="cabin-content-area">
+            <main class="main-content-container cabin-content-container">
 
                 <nav class="cabin-menu-container">
                     <ul class="cabin-menu">
                         <li class="cabin-menu-item">
-                            <span class="cabin-menu-item-ico">📢</span>
-                            <span class="cabin-menu-item-text">PA</span>
+                            <a class="cabin-menu-item-ico cabin-menu-link" href="#">📢</a>
+                            <a class="cabin-menu-item-text cabin-menu-link" href="#">PA</a>
                         </li>
                         <li class="cabin-menu-item">
-                            <span class="cabin-menu-item-ico">🌡️</span>
-                            <span class="cabin-menu-item-text">AC</span>
+                            <a class="cabin-menu-item-ico cabin-menu-link" href="#">🌡️</a>
+                            <a class="cabin-menu-item-text cabin-menu-link" href="#">AC</a>
                         </li>
                         <li class="cabin-menu-item">
-                            <span class="cabin-menu-item-ico">🎶</span>
-                            <span class="cabin-menu-item-text">Music</span>
+                            <a class="cabin-menu-item-ico cabin-menu-link" href="#">🎶</a>
+                            <a class="cabin-menu-item-text cabin-menu-link" href="#">Music</a>
                         </li>
                         <li class="cabin-menu-item">
-                            <span class="cabin-menu-item-ico">💡</span>
-                            <span class="cabin-menu-item-text">Lights</span>
+                            <a class="cabin-menu-item-ico cabin-menu-link" href="#">💡</a>
+                            <a class="cabin-menu-item-text cabin-menu-link" href="#">Lights</a>
                         </li>
                         <li class="cabin-menu-item">
-                            <span class="cabin-menu-item-ico">🪟</span>
-                            <span class="cabin-menu-item-text">Shades</span>
+                            <a class="cabin-menu-item-ico cabin-menu-link" href="#">🪟</a>
+                            <a class="cabin-menu-item-text cabin-menu-link" href="#">Shades</a>
                         </li>
                     </ul>
                 </nav>
 
                 <section class="cabin-control-container cabin-control-container-pa">
                     <h2 class="cabin-control-category-title">Announcement</h2>
+                    <label for="pa-lib">Choose an announcement track<br>
+                        <select name="pa-lib" id="pa-lib">
+                            <optgroup label="Hospitality">
+                                <option value="arrival">We will be arriving shortly</option>
+                                <option value="breakfast">Breakfast is now being served</option>
+                                <option value="weather">The weather at our destination is sunny and warm</option>
+                                <option value="welcome">Welcome aboard and thank you for choosing us</option>
+                            </optgroup>
+                            <optgroup label="Safety">
+                                <option value="evacuation">Emergency evacuation procedure</option>
+                                <option value="seatbelt">Please fasten your seatbelt</option>
+                                <option value="secure-items">Please stow your loose items securely</option>
+                                <option value="smoke">Smoking is strictly prohibited</option>
+                            </optgroup>
+                            <optgroup label="Service Updates">
+                                <option value="cleaning">Sanitization is underway for your safety</option>
+                                <option value="crew">Your cabin crew is here to assist you</option>
+                                <option value="delay">We apologize for the delay</option>
+                                <option value="wifi">Wi-Fi is now available</option>
+                            </optgroup>
+                        </select>
+                    </label>
+                    <label for="pa-search"><input type="search" name="pa-search" id="pa-search">Search</label>
+
+
+
+
                 </section>
 
-                <section class="cabin-control-container cabin-control-container-temp">
+                <section class="cabin-control-container cabin-control-container-ac">
                     <h2 class="cabin-control-category-title">Temperature</h2>
                 </section>
 
-                <section class="cabin-control-container cabin-control-container-lighting">
+                <section class="cabin-control-container cabin-control-container-lights">
                     <h2 class="cabin-control-category-title">Lighting</h2>
                 </section>
 
@@ -125,8 +152,8 @@
                     <h2 class="cabin-control-category-title">Music</h2>
                 </section>
 
-                <section class="cabin-control-container cabin-control-container-windows">
-                    <h2 class="cabin-control-category-title">Windows</h2>
+                <section class="cabin-control-container cabin-control-container-shades">
+                    <h2 class="cabin-control-category-title">Shades</h2>
                 </section>
 
             </main>
