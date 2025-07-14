@@ -63,12 +63,10 @@ html {
 }
 
 .logo {
-	width: 100%;
-	max-width: 4rem;
+	width: 4.5rem;
 	border-radius: 1.5rem;
-	border: 2px solid var(--color-neutral-constrast);
-	background-color: var(--color-light-background);
-	padding: 0.2rem;
+	background-color: var(--color-analogous);
+	padding: 0.5rem;
 }
 
 .flight-number-container {
@@ -77,6 +75,19 @@ html {
 	color: var(--color-light-background);
 	text-align: center;
 	font-weight: 600;
+}
+
+.account-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.account-ico {
+	width: 4.5rem;
+	padding: 0.2rem;
+	border-radius: 1.5rem;
+	background-color: var(--color-complimentary);
 }
 
 .top-menu-container {
@@ -90,12 +101,6 @@ html {
 }
 
 /* NAVIGATION BAR */
-.menu-container {
-	min-width: min-content;
-	overflow: scroll;
-	scrollbar-width: none;
-}
-
 .menu {
 	display: flex;
 	flex-direction: column;
@@ -166,7 +171,8 @@ html {
 	height: 100%;
 	gap: 1rem;
 	border-radius: 2rem;
-	overflow: scroll;
+	overflow-x: hidden;
+	overflow-y: scroll;
 	scrollbar-width: none;
 }
 
@@ -289,7 +295,7 @@ html {
 	padding: 0.5rem 1rem;
 }
 
-.request-icon {
+.request-ico {
 	width: 1.8rem;
 	justify-self: end;
 }
@@ -303,7 +309,7 @@ html {
 
 .request-seat {
 	text-align: right;
-	color: var(--color-complimentary);
+	color: var(--color-complimentary-darker);
 	font-weight: 500;
 	font-size: 1.8rem;
 }

@@ -104,19 +104,30 @@
 		padding: 0.5rem;
 	}
 
+	.logo,
+	.account-ico {
+		width: 4rem;
+	}
+
+	.content-container {
+		gap: 0.5rem;
+	}
+
 	.menu-container {
-		max-width: none;
-		width: 100%;
+		min-width: 100%;
 		padding: 0.5rem;
+		overflow-y: scroll;
+		scrollbar-width: none;
+		border-radius: 2rem;
+		background-color: var(--color-primary);
 	}
 
 	.menu {
 		flex-direction: row;
 		justify-content: space-between;
-		overflow: scroll;
-		scrollbar-width: none;
+		align-items: center;
 		gap: 0.5rem;
-		padding: 0;
+		margin-bottom: 0.2rem;
 	}
 
 	.menu-item,
@@ -127,10 +138,10 @@
 
 	.menu-item-icon,
 	.menu-item-icon-current {
-		width: 5rem;
-		padding: 0.5rem;
+		width: 4.5rem;
+		padding: 0.2rem;
 		border: none;
-		border-radius: 2rem;
+		border-radius: 1.5rem;
 	}
 
 	.menu-item-icon {
@@ -152,7 +163,6 @@
 
 	.content-container {
 		flex-direction: column;
-		align-items: center;
 	}
 
 	.flight-number {
