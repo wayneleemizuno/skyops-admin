@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SkyOps Admin Panel for inflight management and operations.">
+    <meta name="keywords" content="inflight, admin, airline, management, dashboard, crew, passenger">
+    <meta name="author" content="Wayne Lee">
+    <title>SkyOps Admin - Crew</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/media_queries.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <div class="app-container">
+
+        <header class="top-bar">
+            <img class="logo" src="img/airplane-logo.png" alt="logo">
+
+            <span class="flight-number-container"><span class="airline-code">BA</span><span
+                    class="flight-number">924</span>
+            </span>
+        </header>
+
+        <div class="content-container">
+            <nav class="menu-container">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="index.html" class="menu-link">Dashboard</a>
+                        <a href="index.html" class="menu-item-icon">📊</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Flight</a>
+                        <a href="#" class="menu-item-icon">✈️</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="cabin.html" class="menu-link">Cabin</a>
+                        <a href="cabin.html" class="menu-item-icon">💺</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="passenger.html" class="menu-link">Passenger</a>
+                        <a href="passenger.html" class="menu-item-icon">🧍</a>
+                    </li>
+                    <li class="menu-item-current">
+                        <span class="menu-current">Crew</span>
+                        <span class="menu-item-icon-current">👨‍✈️</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Service</a>
+                        <a href="#" class="menu-item-icon">🍽️</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Map</a>
+                        <a href="#" class="menu-item-icon">🗺️</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Settings</a>
+                        <a href="#" class="menu-item-icon">⚙️</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main class="main-content-container crew-content-area">
+
+                <section class="crew-group-container crew-group-cockpit">
+                    <h2 class="crew-group-label">Cockpit</h2>
+                    <div class="crew-group-card-container">
+                        <div class="crew-profile-card">
+                            <div class="crew-profile-header">
+                                <div class="crew-full-name">
+                                    <span class="crew-first-name">Sarah</span>
+                                    <span class="crew-last-name">Mitchell</span>
+                                </div>
+                                <span class="crew-rank">CPT</span>
+                            </div>
+                            <div class="crew-profile-body">
+                                <img class="crew-profile-pic" src="img/crew-profile-pic.jpg" alt="Sarah Mitchell photo">
+                                <div class="crew-current-position-container">
+                                    <p class="crew-current-position-label">Position</p>
+                                    <p class="crew-current-position-value">CIC</p>
+                                </div>
+                                <div class="crew-current-status-container">
+                                    <p class="crew-current-status-label">Status</p>
+                                    <p class="crew-current-status-value">🟢</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crew-profile-card">
+                            <div class="crew-profile-header">
+                                <div class="crew-full-name">
+                                    <span class="crew-first-name">Daniel</span>
+                                    <span class="crew-last-name">Lopez Garcia</span>
+                                </div>
+                                <span class="crew-rank">FO</span>
+                            </div>
+                            <div class="crew-profile-body">
+                                <img class="crew-profile-pic" src="img/crew-profile-pic.jpg"
+                                    alt="Daniel Lopez Garcia photo">
+                                <div class="crew-current-position-container">
+                                    <p class="crew-current-position-label">Position</p>
+                                    <p class="crew-current-position-value">FO 1</p>
+                                </div>
+                                <div class="crew-current-status-container">
+                                    <p class="crew-current-status-label">Status</p>
+                                    <p class="crew-current-status-value">🟢</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crew-profile-card">
+                            <div class="crew-profile-header">
+                                <div class="crew-full-name">
+                                    <span class="crew-first-name">Priya</span>
+                                    <span class="crew-last-name">Sharma-Benedetti</span>
+                                </div>
+                                <span class="crew-rank">FO</span>
+                            </div>
+                            <div class="crew-profile-body">
+                                <img class="crew-profile-pic" src="img/crew-profile-pic.jpg"
+                                    alt="Priya Sharma-Benedetti photo">
+                                <div class="crew-current-position-container">
+                                    <p class="crew-current-position-label">Position</p>
+                                    <p class="crew-current-position-value">FO 2</p>
+                                </div>
+                                <div class="crew-current-status-container">
+                                    <p class="crew-current-status-label">Status</p>
+                                    <p class="crew-current-status-value">😴</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crew-profile-card">
+                            <div class="crew-profile-header">
+                                <div class="crew-full-name">
+                                    <span class="crew-first-name">Lucas</span>
+                                    <span class="crew-last-name">Fernandez Ruiz</span>
+                                </div>
+                                <span class="crew-rank">SO</span>
+                            </div>
+                            <div class="crew-profile-body">
+                                <img class="crew-profile-pic" src="img/crew-profile-pic.jpg"
+                                    alt="Lucas Fernandez Ruiz photo">
+                                <div class="crew-current-position-container">
+                                    <p class="crew-current-position-label">Position</p>
+                                    <p class="crew-current-position-value">SO 1</p>
+                                </div>
+                                <div class="crew-current-status-container">
+                                    <p class="crew-current-status-label">Status</p>
+                                    <p class="crew-current-status-value">😴</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="crew-group-container crew-group-cabin">
+                    <h2 class="crew-group-label">Cabin</h2>
+                    <div class="crew-group-card-container">
+                        <div class="crew-profile-card">
+                            <div class="crew-profile-header">
+                                <div class="crew-full-name">
+                                    <span class="crew-first-name">Emily</span>
+                                    <span class="crew-last-name">Chen</span>
+                                </div>
+                                <span class="crew-rank">LP</span>
+                            </div>
+                            <div class="crew-profile-body">
+                                <img class="crew-profile-pic" src="img/crew-profile-pic.jpg" alt="Emily Chen photo">
+                                <div class="crew-current-position-container">
+                                    <p class="crew-current-position-label">Position</p>
+                                    <p class="crew-current-position-value">LP</p>
+                                </div>
+                                <div class="crew-current-status-container">
+                                    <p class="crew-current-status-label">Status</p>
+                                    <p class="crew-current-status-value">🟢</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crew-profile-card">
+                            <div class="crew-profile-header">
+                                <div class="crew-full-name">
+                                    <span class="crew-first-name">James</span>
+                                    <span class="crew-last-name">Gonzalez de la Vega</span>
+                                </div>
+                                <span class="crew-rank">FP</span>
+                            </div>
+                            <div class="crew-profile-body">
+                                <img class="crew-profile-pic" src="img/crew-profile-pic.jpg"
+                                    alt="James Gonzalez de la Vega photo">
+                                <div class="crew-current-position-container">
+                                    <p class="crew-current-position-label">Position</p>
+                                    <p class="crew-current-position-value">FP 1</p>
+                                </div>
+                                <div class="crew-current-status-container">
+                                    <p class="crew-current-status-label">Status</p>
+                                    <p class="crew-current-status-value">🟢</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crew-profile-card">
+                            <div class="crew-profile-header">
+                                <div class="crew-full-name">
+                                    <span class="crew-first-name">Maria</span>
+                                    <span class="crew-last-name">Dubois-Lafayette</span>
+                                </div>
+                                <span class="crew-rank">FA</span>
+                            </div>
+                            <div class="crew-profile-body">
+                                <img class="crew-profile-pic" src="img/crew-profile-pic.jpg"
+                                    alt="Maria Dubois-Lafayette photo">
+                                <div class="crew-current-position-container">
+                                    <p class="crew-current-position-label">Position</p>
+                                    <p class="crew-current-position-value">FA 1</p>
+                                </div>
+                                <div class="crew-current-status-container">
+                                    <p class="crew-current-status-label">Status</p>
+                                    <p class="crew-current-status-value">🟢</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crew-profile-card">
+                            <div class="crew-profile-header">
+                                <div class="crew-full-name">
+                                    <span class="crew-first-name">Sophie</span>
+                                    <span class="crew-last-name">Martinez del Castillo</span>
+                                </div>
+                                <span class="crew-rank">FA</span>
+                            </div>
+                            <div class="crew-profile-body">
+                                <img class="crew-profile-pic" src="img/crew-profile-pic.jpg"
+                                    alt="Sophie Martinez del Castillo photo">
+                                <div class="crew-current-position-container">
+                                    <p class="crew-current-position-label">Position</p>
+                                    <p class="crew-current-position-value">FA 2</p>
+                                </div>
+                                <div class="crew-current-status-container">
+                                    <p class="crew-current-status-label">Status</p>
+                                    <p class="crew-current-status-value">🟢</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crew-profile-card">
+                            <div class="crew-profile-header">
+                                <div class="crew-full-name">
+                                    <span class="crew-first-name">Ahmed</span>
+                                    <span class="crew-last-name">El-Sayed</span>
+                                </div>
+                                <span class="crew-rank">FA</span>
+                            </div>
+                            <div class="crew-profile-body">
+                                <img class="crew-profile-pic" src="img/crew-profile-pic.jpg" alt="Ahmed El-Sayed photo">
+                                <div class="crew-current-position-container">
+                                    <p class="crew-current-position-label">Position</p>
+                                    <p class="crew-current-position-value">FA 3</p>
+                                </div>
+                                <div class="crew-current-status-container">
+                                    <p class="crew-current-status-label">Status</p>
+                                    <p class="crew-current-status-value">🟢</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crew-profile-card">
+                            <div class="crew-profile-header">
+                                <div class="crew-full-name">
+                                    <span class="crew-first-name">Julia</span>
+                                    <span class="crew-last-name">Perez de la Cruz</span>
+                                </div>
+                                <span class="crew-rank">FA</span>
+                            </div>
+                            <div class="crew-profile-body">
+                                <img class="crew-profile-pic" src="img/crew-profile-pic.jpg"
+                                    alt="Julia Perez de la Cruz photo">
+                                <div class="crew-current-position-container">
+                                    <p class="crew-current-position-label">Position</p>
+                                    <p class="crew-current-position-value">FA 4</p>
+                                </div>
+                                <div class="crew-current-status-container">
+                                    <p class="crew-current-status-label">Status</p>
+                                    <p class="crew-current-status-value">😴</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crew-profile-card">
+                            <div class="crew-profile-header">
+                                <div class="crew-full-name">
+                                    <span class="crew-first-name">Chloe</span>
+                                    <span class="crew-last-name">Evans</span>
+                                </div>
+                                <span class="crew-rank">FA</span>
+                            </div>
+                            <div class="crew-profile-body">
+                                <img class="crew-profile-pic" src="img/crew-profile-pic.jpg" alt="Chloe Evans photo">
+                                <div class="crew-current-position-container">
+                                    <p class="crew-current-position-label">Position</p>
+                                    <p class="crew-current-position-value">FA 5</p>
+                                </div>
+                                <div class="crew-current-status-container">
+                                    <p class="crew-current-status-label">Status</p>
+                                    <p class="crew-current-status-value">😴</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crew-profile-card">
+                            <div class="crew-profile-header">
+                                <div class="crew-full-name">
+                                    <span class="crew-first-name">Mark</span>
+                                    <span class="crew-last-name">Robinson-Smith</span>
+                                </div>
+                                <span class="crew-rank">FA</span>
+                            </div>
+                            <div class="crew-profile-body">
+                                <img class="crew-profile-pic" src="img/crew-profile-pic.jpg"
+                                    alt="Mark Robinson-Smith photo">
+                                <div class="crew-current-position-container">
+                                    <p class="crew-current-position-label">Position</p>
+                                    <p class="crew-current-position-value">FA 6</p>
+                                </div>
+                                <div class="crew-current-status-container">
+                                    <p class="crew-current-status-label">Status</p>
+                                    <p class="crew-current-status-value">🟢</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crew-profile-card">
+                            <div class="crew-profile-header">
+                                <div class="crew-full-name">
+                                    <span class="crew-first-name">Isabella</span>
+                                    <span class="crew-last-name">Rossi</span>
+                                </div>
+                                <span class="crew-rank">FA</span>
+                            </div>
+                            <div class="crew-profile-body">
+                                <img class="crew-profile-pic" src="img/crew-profile-pic.jpg" alt="Isabella Rossi photo">
+                                <div class="crew-current-position-container">
+                                    <p class="crew-current-position-label">Position</p>
+                                    <p class="crew-current-position-value">FA 7</p>
+                                </div>
+                                <div class="crew-current-status-container">
+                                    <p class="crew-current-status-label">Status</p>
+                                    <p class="crew-current-status-value">🟢</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crew-profile-card">
+                            <div class="crew-profile-header">
+                                <div class="crew-full-name">
+                                    <span class="crew-first-name">Tomoko</span>
+                                    <span class="crew-last-name">Morales de los Santos</span>
+                                </div>
+                                <span class="crew-rank">FA</span>
+                            </div>
+                            <div class="crew-profile-body">
+                                <img class="crew-profile-pic" src="img/crew-profile-pic.jpg"
+                                    alt="Tomoko Morales de los Santos photo">
+                                <div class="crew-current-position-container">
+                                    <p class="crew-current-position-label">Position</p>
+                                    <p class="crew-current-position-value">FA 8</p>
+                                </div>
+                                <div class="crew-current-status-container">
+                                    <p class="crew-current-status-label">Status</p>
+                                    <p class="crew-current-status-value">😴</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="crew-group-container crew-group-standby">
+                    <h2 class="crew-group-label">Standby</h2>
+                    <div class="crew-group-card-container">
+                        <div class="crew-profile-card">
+                            <div class="crew-profile-header">
+                                <div class="crew-full-name">
+                                    <span class="crew-first-name">Hannah</span>
+                                    <span class="crew-last-name">Peterson</span>
+                                </div>
+                                <span class="crew-rank">FA</span>
+                            </div>
+                            <div class="crew-profile-body">
+                                <img class="crew-profile-pic" src="img/crew-profile-pic.jpg"
+                                    alt="Hannah Peterson photo">
+                                <div class="crew-current-position-container">
+                                    <p class="crew-current-position-label">Position</p>
+                                    <p class="crew-current-position-value">SB 1</p>
+                                </div>
+                                <div class="crew-current-status-container">
+                                    <p class="crew-current-status-label">Status</p>
+                                    <p class="crew-current-status-value">😴</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crew-profile-card">
+                            <div class="crew-profile-header">
+                                <div class="crew-full-name">
+                                    <span class="crew-first-name">Leonardo</span>
+                                    <span class="crew-last-name">Rodriguez Sanchez</span>
+                                </div>
+                                <span class="crew-rank">FA</span>
+                            </div>
+                            <div class="crew-profile-body">
+                                <img class="crew-profile-pic" src="img/crew-profile-pic.jpg"
+                                    alt="Leonardo Rodriguez Sanchez photo">
+                                <div class="crew-current-position-container">
+                                    <p class="crew-current-position-label">Position</p>
+                                    <p class="crew-current-position-value">SB 2</p>
+                                </div>
+                                <div class="crew-current-status-container">
+                                    <p class="crew-current-status-label">Status</p>
+                                    <p class="crew-current-status-value">😴</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crew-profile-card">
+                            <div class="crew-profile-header">
+                                <div class="crew-full-name">
+                                    <span class="crew-first-name">Samantha</span>
+                                    <span class="crew-last-name">Nguyen</span>
+                                </div>
+                                <span class="crew-rank">FA</span>
+                            </div>
+                            <div class="crew-profile-body">
+                                <img class="crew-profile-pic" src="img/crew-profile-pic.jpg"
+                                    alt="Samantha Nguyen photo">
+                                <div class="crew-current-position-container">
+                                    <p class="crew-current-position-label">Position</p>
+                                    <p class="crew-current-position-value">SB 3</p>
+                                </div>
+                                <div class="crew-current-status-container">
+                                    <p class="crew-current-status-label">Status</p>
+                                    <p class="crew-current-status-value">😴</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="crew-profile-card">
+                            <div class="crew-profile-header">
+                                <div class="crew-full-name">
+                                    <span class="crew-first-name">Victor</span>
+                                    <span class="crew-last-name">Ivanov-Petrov</span>
+                                </div>
+                                <span class="crew-rank">FA</span>
+                            </div>
+                            <div class="crew-profile-body">
+                                <img class="crew-profile-pic" src="img/crew-profile-pic.jpg"
+                                    alt="Victor Ivanov-Petrov photo">
+                                <div class="crew-current-position-container">
+                                    <p class="crew-current-position-label">Position</p>
+                                    <p class="crew-current-position-value">SB 4</p>
+                                </div>
+                                <div class="crew-current-status-container">
+                                    <p class="crew-current-status-label">Status</p>
+                                    <p class="crew-current-status-value">😴</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2025 SkyOps Admin Panel. All rights reserved.</p>
+            <p>Version 1.0.0</p>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>

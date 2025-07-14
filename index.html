@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SkyOps Admin Panel for inflight management and operations.">
+    <meta name="keywords" content="inflight, admin, airline, management, dashboard, crew, passenger">
+    <meta name="author" content="Wayne Lee">
+    <title>SkyOps Admin - Dashboard</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/media_queries.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <div class="app-container">
+
+        <header class="top-bar">
+            <img class="logo" src="img/airplane-logo.png" alt="logo">
+
+            <span class="flight-number-container"><span class="airline-code">BA</span><span
+                    class="flight-number">924</span>
+            </span>
+        </header>
+
+        <div class="content-container">
+            <nav class="menu-container">
+                <ul class="menu">
+                    <li class="menu-item-current">
+                        <span class="menu-current">Dashboard</span>
+                        <span class="menu-item-icon-current">📊</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Flight</a>
+                        <a href="#" class="menu-item-icon">✈️</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="cabin.html" class="menu-link">Cabin</a>
+                        <a href="cabin.html" class="menu-item-icon">💺</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="passenger.html" class="menu-link">Passenger</a>
+                        <a href="passenger.html" class="menu-item-icon">🧍</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="crew.html" class="menu-link">Crew</a>
+                        <a href="crew.html" class="menu-item-icon">👨‍✈️</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Service</a>
+                        <a href="#" class="menu-item-icon">🍽️</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Map</a>
+                        <a href="#" class="menu-item-icon">🗺️</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Settings</a>
+                        <a href="#" class="menu-item-icon">⚙️</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main class="main-content-container dashboard-content-container">
+                <div class="modular-panel mp-feed">
+                    <div class="modular-panel-title-container">
+                        <h3 class="modular-panel-title">Feed</h3>
+                        <span class="modular-panel-title-ico">📰</span>
+                    </div>
+                    <div class="modular-panel-content-container feed-content-container">
+                        <span class="feed-time">14:33</span>
+                        <p class="feed-content">Cabin crew briefed on upcoming descent procedures and passenger notices.
+                        </p>
+
+                        <span class="feed-time">14:30</span>
+                        <p class="feed-content">Cabin lights dimmed ahead of rest period.</p>
+
+                        <span class="feed-time">14:28</span>
+                        <p class="feed-content">Overhead bins in row 11 inspected due to passenger complaint.</p>
+
+                        <span class="feed-time">14:25</span>
+                        <p class="feed-content">Special meal deliveries completed for dietary needs: vegan, gluten-free,
+                            halal.</p>
+
+                        <span class="feed-time">14:22</span>
+                        <p class="feed-content">Baby bassinet installed at seat 3G per passenger request.</p>
+
+                        <span class="feed-time">14:19</span>
+                        <p class="feed-content">Crew began inventory check for duty-free items.</p>
+
+                        <span class="feed-time">14:17</span>
+                        <p class="feed-content">Hot towels delivered to business class section.</p>
+
+                        <span class="feed-time">14:14</span>
+                        <p class="feed-content">Headsets distributed to passengers in rows 20–30.</p>
+
+                        <span class="feed-time">14:12</span>
+                        <p class="feed-content">Captain announced expected turbulence. Seatbelt signs turned on.</p>
+
+                        <span class="feed-time">14:09</span>
+                        <p class="feed-content">Beverage cart deployed in aisle 1 - light refreshment service ongoing.
+                        </p>
+
+                        <span class="feed-time">14:07</span>
+                        <p class="feed-content">Passenger in 16B requested medical assistance. Crew alerted.</p>
+
+                        <span class="feed-time">14:05</span>
+                        <p class="feed-content">Lavatory in rear galley restocked with amenities and supplies.</p>
+
+                        <span class="feed-time">14:02</span>
+                        <p class="feed-content">Meal trays collected. Crew preparing snack options for next service
+                            cycle.</p>
+                    </div>
+                </div>
+
+                <div class="modular-panel mp-pending-requests">
+                    <div class="modular-panel-title-container">
+                        <h3 class="modular-panel-title">Pending Requests</h3>
+                        <span class="modular-panel-title-ico">⏳</span>
+                    </div>
+                    <div class="modular-panel-content-container pending-requests-container">
+                        <span class="request-time">12:33</span>
+                        <img class="request-icon" src="img/request-seat-ico.png" alt="plane seat icon">
+                        <span class="request-seat">23D</span>
+                        <img class="request-icon" src="img/request-pax-ico.png" alt="passenger icon">
+                        <span class="request-name nowrap">
+                            <span class="request-last-name">Hassan</span>
+                            <span class="request-first-name">Layla</span>
+                        </span>
+                        <img class="request-icon" src="img/request-content-ico.png" alt="dialogue icon">
+                        <span class="request-content">Extra pillow requested</span>
+
+                        <span class="request-time">12:30</span>
+                        <img class="request-icon" src="img/request-seat-ico.png" alt="plane seat icon">
+                        <span class="request-seat">45A</span>
+                        <img class="request-icon" src="img/request-pax-ico.png" alt="passenger icon">
+                        <span class="request-name nowrap">
+                            <span class="request-last-name">Johnson</span>
+                            <span class="request-first-name">Emily</span>
+                        </span>
+                        <img class="request-icon" src="img/request-content-ico.png" alt="dialogue icon">
+                        <span class="request-content">Assistance with overhead bin</span>
+
+                        <span class="request-time">12:27</span>
+                        <img class="request-icon" src="img/request-seat-ico.png" alt="plane seat icon">
+                        <span class="request-seat">9C</span>
+                        <img class="request-icon" src="img/request-pax-ico.png" alt="passenger icon">
+                        <span class="request-name nowrap">
+                            <span class="request-last-name">Okafor</span>
+                            <span class="request-first-name">Chinedu</span>
+                        </span>
+                        <img class="request-icon" src="img/request-content-ico.png" alt="dialogue icon">
+                        <span class="request-content">Noise-cancelling headphones</span>
+
+                        <span class="request-time">12:24</span>
+                        <img class="request-icon" src="img/request-seat-ico.png" alt="plane seat icon">
+                        <span class="request-seat">36F</span>
+                        <img class="request-icon" src="img/request-pax-ico.png" alt="passenger icon">
+                        <span class="request-name nowrap">
+                            <span class="request-last-name">Martinez</span>
+                            <span class="request-first-name">Carlos</span>
+                        </span>
+                        <img class="request-icon" src="img/request-content-ico.png" alt="dialogue icon">
+                        <span class="request-content">Refill water bottle</span>
+
+                        <span class="request-time">12:21</span>
+                        <img class="request-icon" src="img/request-seat-ico.png" alt="plane seat icon">
+                        <span class="request-seat">18K</span>
+                        <img class="request-icon" src="img/request-pax-ico.png" alt="passenger icon">
+                        <span class="request-name nowrap">
+                            <span class="request-last-name">Schmidt</span>
+                            <span class="request-first-name">Lukas</span>
+                        </span>
+                        <img class="request-icon" src="img/request-content-ico.png" alt="dialogue icon">
+                        <span class="request-content">Window shade adjustment</span>
+
+                        <span class="request-time">12:18</span>
+                        <img class="request-icon" src="img/request-seat-ico.png" alt="plane seat icon">
+                        <span class="request-seat">20B</span>
+                        <img class="request-icon" src="img/request-pax-ico.png" alt="passenger icon">
+                        <span class="request-name nowrap">
+                            <span class="request-last-name">Silva</span>
+                            <span class="request-first-name">Leonardo</span>
+                        </span>
+                        <img class="request-icon" src="img/request-content-ico.png" alt="dialogue icon">
+                        <span class="request-content">Report broken screen</span>
+
+                        <span class="request-time">12:15</span>
+                        <img class="request-icon" src="img/request-seat-ico.png" alt="plane seat icon">
+                        <span class="request-seat">6F</span>
+                        <img class="request-icon" src="img/request-pax-ico.png" alt="passenger icon">
+                        <span class="request-name nowrap">
+                            <span class="request-last-name">Nair</span>
+                            <span class="request-first-name">Priya</span>
+                        </span>
+                        <img class="request-icon" src="img/request-content-ico.png" alt="dialogue icon">
+                        <span class="request-content">Switch seat to aisle</span>
+
+                        <span class="request-time">12:11</span>
+                        <img class="request-icon" src="img/request-seat-ico.png" alt="plane seat icon">
+                        <span class="request-seat">14C</span>
+                        <img class="request-icon" src="img/request-pax-ico.png" alt="passenger icon">
+                        <span class="request-name nowrap">
+                            <span class="request-last-name">Tran</span>
+                            <span class="request-first-name">David</span>
+                        </span>
+                        <img class="request-icon" src="img/request-content-ico.png" alt="dialogue icon">
+                        <span class="request-content">Blanket for child</span>
+
+                        <span class="request-time">12:08</span>
+                        <img class="request-icon" src="img/request-seat-ico.png" alt="plane seat icon">
+                        <span class="request-seat">3A</span>
+                        <img class="request-icon" src="img/request-pax-ico.png" alt="passenger icon">
+                        <span class="request-name nowrap">
+                            <span class="request-last-name">Wong</span>
+                            <span class="request-first-name">Alice</span>
+                        </span>
+                        <img class="request-icon" src="img/request-content-ico.png" alt="dialogue icon">
+                        <span class="request-content">Requesting charging cable</span>
+
+                        <span class="request-time">12:04</span>
+                        <img class="request-icon" src="img/request-seat-ico.png" alt="plane seat icon">
+                        <span class="request-seat">12H</span>
+                        <img class="request-icon" src="img/request-pax-ico.png" alt="passenger icon">
+                        <span class="request-name nowrap">
+                            <span class="request-last-name">Doe</span>
+                            <span class="request-first-name">John</span>
+                        </span>
+                        <img class="request-icon" src="img/request-content-ico.png" alt="dialogue icon">
+                        <span class="request-content">Coke with ice</span>
+                    </div>
+                </div>
+                <div class="modular-panel mp-reminders">
+                    <div class="modular-panel-title-container">
+                        <h3 class="modular-panel-title">Reminders</h3>
+                        <span class="modular-panel-title-ico">⏰</span>
+                    </div>
+                    <div class="modular-panel-content-container">
+                        <ul class="reminder-list">
+                            <li>
+                                <label class="reminder-text">
+                                    <input type="checkbox" name="reminder1" class="reminder-checkbox">
+                                    Retrieve trays from cockpit
+                                </label>
+                            </li>
+                            <li>
+                                <label class="reminder-text">
+                                    <input type="checkbox" name="reminder2" class="reminder-checkbox">
+                                    Check lavatory supplies
+                                </label>
+                            </li>
+                            <li>
+                                <label class="reminder-text">
+                                    <input type="checkbox" name="reminder3" class="reminder-checkbox">
+                                    Confirm meal preferences with passengers
+                                </label>
+                            </li>
+                            <li>
+                                <label class="reminder-text">
+                                    <input type="checkbox" name="reminder4" class="reminder-checkbox">
+                                    Announce turbulence warning
+                                </label>
+                            </li>
+                            <li>
+                                <label class="reminder-text">
+                                    <input type="checkbox" name="reminder5" class="reminder-checkbox">
+                                    Distribute headsets in economy
+                                </label>
+                            </li>
+
+                            <!-- New reminders -->
+                            <li>
+                                <label class="reminder-text">
+                                    <input type="checkbox" name="reminder6" class="reminder-checkbox">
+                                    Monitor cabin temperature
+                                </label>
+                            </li>
+                            <li>
+                                <label class="reminder-text">
+                                    <input type="checkbox" name="reminder7" class="reminder-checkbox">
+                                    Refill beverage cart in rear galley
+                                </label>
+                            </li>
+                            <li>
+                                <label class="reminder-text">
+                                    <input type="checkbox" name="reminder8" class="reminder-checkbox">
+                                    Collect trash from aisle 2
+                                </label>
+                            </li>
+                            <li>
+                                <label class="reminder-text">
+                                    <input type="checkbox" name="reminder9" class="reminder-checkbox">
+                                    Verify seatbelt compliance before descent
+                                </label>
+                            </li>
+                            <li>
+                                <label class="reminder-text">
+                                    <input type="checkbox" name="reminder10" class="reminder-checkbox">
+                                    Update crew on gate arrival details
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="modular-panel mp-flight-status">
+                    <div class="modular-panel-title-container">
+                        <h3 class="modular-panel-title">Flight Status</h3>
+                        <span class="modular-panel-title-ico">📈</span>
+                    </div>
+                    <div class="modular-panel-content-container flight-status-container">
+                        <div class="flight-status-left-container">
+                            <span class="flight-status-label">Altitude</span>
+                            <span class="flight-status-value flight-status-altitude">36,000 ft</span>
+                            <span class="flight-status-label">Speed</span>
+                            <span class="flight-status-value flight-status-speed">520 knots</span>
+                            <span class="flight-status-label">Air Temp</span>
+                            <span class="flight-status-value flight-status-temp">-52°C</span>
+                            <span class="flight-status-label">Distance</span>
+                            <span class="flight-status-value flight-status-distance">2,150 km</span>
+                            <span class="flight-status-label">Seatbelt Sign</span>
+                            <span class="flight-status-value flight-status-seatbelt">On</span>
+                            <span class="flight-status-label">Cabin Temp</span>
+                            <span class="flight-status-value"> <span class="nowrap">C: 23°C</span> |
+                                <span class="nowrap">Y: 24°C</span></span>
+                        </div>
+                        <div class="flight-status-right-container">
+                            <span class="flight-status-label">FLT Time</span>
+                            <span class="flight-status-value">12h 35m</span>
+                            <span class="flight-status-label">ETA</span>
+                            <span class="flight-status-value">11:25</span>
+                            <span class="flight-status-label">ORI</span>
+                            <span class="flight-status-value">14:34</span>
+                            <span class="flight-status-label">DST</span>
+                            <span class="flight-status-value">07:34</span>
+                            <span class="flight-status-label">Time to DST</span>
+                            <span class="flight-status-value">3h 42m</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="modular-panel mp-crew-status">
+                    <div class="modular-panel-title-container">
+                        <h3 class="modular-panel-title">Crew Status</h3>
+                        <span class="modular-panel-title-ico">💼</span>
+                    </div>
+                    <div class="modular-panel-content-container crew-status-container">
+                        <div class="crew-status-cockpit-container">
+                            <ul class="crew-status-list crew-status-list-cockpit">
+                                <li class="crew-status-group-label">Cockpit</li>
+                                <li class="crew-status-list-item">
+                                    <div class="crew-status-name-container">
+                                        <div class="crew-status-ico">🟢</div>
+                                        <div class="crew-status-firstname">Sarah</div>
+                                        <div class="crew-status-lastname">Mitchell</div>
+                                    </div>
+                                    <div class="crew-status-rank">CPT</div>
+                                </li>
+                                <li class="crew-status-list-item">
+                                    <div class="crew-status-name-container">
+                                        <div class="crew-status-ico">🟢</div>
+                                        <div class="crew-status-firstname">Daniel</div>
+                                        <div class="crew-status-lastname">Lopez Garcia</div>
+                                    </div>
+                                    <div class="crew-status-rank">FO</div>
+                                </li>
+                                <li class="crew-status-list-item">
+                                    <div class="crew-status-name-container">
+                                        <div class="crew-status-ico">😴</div>
+                                        <div class="crew-status-firstname">Priya</div>
+                                        <div class="crew-status-lastname">Sharma-Benedetti</div>
+                                    </div>
+                                    <div class="crew-status-rank">FO</div>
+                                </li>
+                                <li class="crew-status-list-item">
+                                    <div class="crew-status-name-container">
+                                        <div class="crew-status-ico">😴</div>
+                                        <div class="crew-status-firstname">Lucas</div>
+                                        <div class="crew-status-lastname">Fernandez Ruiz</div>
+                                    </div>
+                                    <div class="crew-status-rank">SO</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="crew-status-cabin-container">
+                            <ul class="crew-status-list crew-status-list-cabin">
+                                <li class="crew-status-group-label">Cabin</li>
+                                <li class="crew-status-list-item">
+                                    <div class="crew-status-name-container">
+                                        <div class="crew-status-ico">🟢</div>
+                                        <div class="crew-status-firstname">Emily</div>
+                                        <div class="crew-status-lastname">Chen</div>
+                                    </div>
+                                    <div class="crew-status-rank">LP</div>
+                                </li>
+                                <li class="crew-status-list-item">
+                                    <div class="crew-status-name-container">
+                                        <div class="crew-status-ico">🟢</div>
+                                        <div class="crew-status-firstname">James</div>
+                                        <div class="crew-status-lastname">Gonzalez de la Vega</div>
+                                    </div>
+                                    <div class="crew-status-rank">FP</div>
+                                </li>
+                                <li class="crew-status-list-item">
+                                    <div class="crew-status-name-container">
+                                        <div class="crew-status-ico">🟢</div>
+                                        <div class="crew-status-firstname">Maria</div>
+                                        <div class="crew-status-lastname">Dubois-Lafayette</div>
+                                    </div>
+                                    <div class="crew-status-rank">FA</div>
+                                </li>
+                                <li class="crew-status-list-item">
+                                    <div class="crew-status-name-container">
+                                        <div class="crew-status-ico">🟢</div>
+                                        <div class="crew-status-firstname">Sophie</div>
+                                        <div class="crew-status-lastname">Martinez del Castillo
+                                        </div>
+                                    </div>
+                                    <div class="crew-status-rank">FA</div>
+                                </li>
+                                <li class="crew-status-list-item">
+                                    <div class="crew-status-name-container">
+                                        <div class="crew-status-ico">🟢</div>
+                                        <div class="crew-status-firstname">Ahmed</div>
+                                        <div class="crew-status-lastname">El-Sayed</div>
+                                    </div>
+                                    <div class="crew-status-rank">FA</div>
+                                </li>
+                                <li class="crew-status-list-item">
+                                    <div class="crew-status-name-container">
+                                        <div class="crew-status-ico">😴</div>
+                                        <div class="crew-status-firstname">Julia</div>
+                                        <div class="crew-status-lastname">Perez de la Cruz</div>
+                                    </div>
+                                    <div class="crew-status-rank">FA</div>
+                                </li>
+                                <li class="crew-status-list-item">
+                                    <div class="crew-status-name-container">
+                                        <div class="crew-status-ico">😴</div>
+                                        <div class="crew-status-firstname">Chloe</div>
+                                        <div class="crew-status-lastname">Evans</div>
+                                    </div>
+                                    <div class="crew-status-rank">FA</div>
+                                </li>
+                                <li class="crew-status-list-item">
+                                    <div class="crew-status-name-container">
+                                        <div class="crew-status-ico">🟢</div>
+                                        <div class="crew-status-firstname">Mark</div>
+                                        <div class="crew-status-lastname">Robinson-Smith</div>
+                                    </div>
+                                    <div class="crew-status-rank">FA</div>
+                                </li>
+                                <li class="crew-status-list-item">
+                                    <div class="crew-status-name-container">
+                                        <div class="crew-status-ico">🟢</div>
+                                        <div class="crew-status-firstname">Isabella</div>
+                                        <div class="crew-status-lastname">Rossi</div>
+                                    </div>
+                                    <div class="crew-status-rank">FA</div>
+                                </li>
+                                <li class="crew-status-list-item">
+                                    <div class="crew-status-name-container">
+                                        <div class="crew-status-ico">😴</div>
+                                        <div class="crew-status-firstname">Tomoko</div>
+                                        <div class="crew-status-lastname">Morales de los Santos</div>
+                                    </div>
+                                    <div class="crew-status-rank">FA</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="crew-status-sb-container">
+                            <ul class="crew-status-list crew-status-list-sb">
+                                <li class="crew-status-group-label">Stand-By</li>
+                                <li class="crew-status-list-item">
+                                    <div class="crew-status-name-container">
+                                        <div class="crew-status-ico">😴</div>
+                                        <div class="crew-status-firstname">Hannah</div>
+                                        <div class="crew-status-lastname">Peterson</div>
+                                    </div>
+                                    <div class="crew-status-rank">FA</div>
+                                </li>
+                                <li class="crew-status-list-item">
+                                    <div class="crew-status-name-container">
+                                        <div class="crew-status-ico">😴</div>
+                                        <div class="crew-status-firstname">Leonardo</div>
+                                        <div class="crew-status-lastname">Rodriguez Sanchez</div>
+                                    </div>
+                                    <div class="crew-status-rank">FA</div>
+                                </li>
+                                <li class="crew-status-list-item">
+                                    <div class="crew-status-name-container">
+                                        <div class="crew-status-ico">😴</div>
+                                        <div class="crew-status-firstname">Samantha</div>
+                                        <div class="crew-status-lastname">Nguyen</div>
+                                    </div>
+                                    <div class="crew-status-rank">FA</div>
+                                </li>
+                                <li class="crew-status-list-item">
+                                    <div class="crew-status-name-container">
+                                        <div class="crew-status-ico">😴</div>
+                                        <div class="crew-status-firstname">Victor</div>
+                                        <div class="crew-status-lastname">Ivanov-Petrov</div>
+                                    </div>
+                                    <div class="crew-status-rank">FA</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modular-panel mp-lighting">
+                    <div class="modular-panel-title-container">
+                        <h3 class="modular-panel-title">Lighting</h3>
+                        <span class="modular-panel-title-ico">💡</span>
+                    </div>
+                    <div class="modular-panel-content-container lighting-container">
+                        <div class="lighting-area-container c-lighting">
+                            <p class="lighting-class-label">Business</p>
+                            <div class="lighting-option-container">
+                                <span class="lighting-option-label">Theme</span>
+                                <span class="light-option-value">Sunset</span>
+                                <span class="lighting-option-label">Bright</span>
+                                <span class="light-option-value">85%</span>
+                                <span class="lighting-option-label">Warmth</span>
+                                <span class="light-option-value">2700K</span>
+                                <span class="lighting-option-label">Sleep</span>
+                                <span class="light-option-value">Enabled</span>
+                            </div>
+                        </div>
+
+                        <div class="lighting-area-container y-lighting">
+                            <p class="lighting-class-label">Economy</p>
+                            <div class="lighting-option-container">
+                                <span class="lighting-option-label">Theme</span>
+                                <span class="light-option-value">Sunset</span>
+                                <span class="lighting-option-label">Bright</span>
+                                <span class="light-option-value">70%</span>
+                                <span class="lighting-option-label">Warmth</span>
+                                <span class="light-option-value">3500K</span>
+                                <span class="lighting-option-label">Sleep</span>
+                                <span class="light-option-value">Disabled</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modular-panel mp-wifi">
+                    <div class="modular-panel-title-container">
+                        <h3 class="modular-panel-title">Wi-Fi</h3>
+                        <span class="modular-panel-title-ico">📶</span>
+                    </div>
+                    <div class="modular-panel-content-container wifi-status-container">
+                        <p class="wifi-status" id="wifi-status">on</p>
+                    </div>
+
+                </div>
+        </div>
+
+
+
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 SkyOps. All rights reserved. V. 1.0.0</p>
+        </footer>
+    </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

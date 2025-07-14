@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SkyOps Admin Panel for inflight management and operations.">
+    <meta name="keywords" content="inflight, admin, airline, management, dashboard, crew, passenger">
+    <meta name="author" content="Wayne Lee">
+    <title>SkyOps Admin - Cabin</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/media_queries.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <div class="app-container">
+
+        <header class="top-bar">
+            <img class="logo" src="img/airplane-logo.png" alt="logo">
+
+            <span class="flight-number-container"><span class="airline-code">BA</span><span
+                    class="flight-number">924</span>
+            </span>
+        </header>
+
+        <div class="content-container">
+            <nav class="menu-container">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="index.html" class="menu-link">Dashboard</a>
+                        <a href="index.html" class="menu-item-icon">📊</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Flight</a>
+                        <a href="#" class="menu-item-icon">✈️</a>
+                    </li>
+                    <li class="menu-item-current">
+                        <span class="menu-current">Cabin</span>
+                        <span class="menu-item-icon-current">💺</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="passenger.html" class="menu-link">Passenger</a>
+                        <a href="passenger.html" class="menu-item-icon">🧍</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="crew.html" class="menu-link">Crew</a>
+                        <a href="crew.html" class="menu-item-icon">👨‍✈️</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Service</a>
+                        <a href="#" class="menu-item-icon">🍽️</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Map</a>
+                        <a href="#" class="menu-item-icon">🗺️</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Settings</a>
+                        <a href="#" class="menu-item-icon">⚙️</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main class="cabin-content-area">
+
+                <nav class="cabin-menu-container">
+                    <ul class="cabin-menu">
+                        <li class="cabin-menu-item">
+                            <span class="cabin-menu-item-ico">📢</span>
+                            <span class="cabin-menu-item-text">PA</span>
+                        </li>
+                        <li class="cabin-menu-item">
+                            <span class="cabin-menu-item-ico">🌡️</span>
+                            <span class="cabin-menu-item-text">AC</span>
+                        </li>
+                        <li class="cabin-menu-item">
+                            <span class="cabin-menu-item-ico">🎶</span>
+                            <span class="cabin-menu-item-text">Music</span>
+                        </li>
+                        <li class="cabin-menu-item">
+                            <span class="cabin-menu-item-ico">💡</span>
+                            <span class="cabin-menu-item-text">Lights</span>
+                        </li>
+                        <li class="cabin-menu-item">
+                            <span class="cabin-menu-item-ico">🪟</span>
+                            <span class="cabin-menu-item-text">Shades</span>
+                        </li>
+                    </ul>
+                </nav>
+
+                <section class="cabin-control-container cabin-control-container-pa">
+                    <h2 class="cabin-control-category-title">Announcement</h2>
+                </section>
+
+                <section class="cabin-control-container cabin-control-container-temp">
+                    <h2 class="cabin-control-category-title">Temperature</h2>
+                </section>
+
+                <section class="cabin-control-container cabin-control-container-lighting">
+                    <h2 class="cabin-control-category-title">Lighting</h2>
+                </section>
+
+                <section class="cabin-control-container cabin-control-container-music">
+                    <h2 class="cabin-control-category-title">Music</h2>
+                </section>
+
+                <section class="cabin-control-container cabin-control-container-windows">
+                    <h2 class="cabin-control-category-title">Windows</h2>
+                </section>
+
+            </main>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2025 SkyOps Admin Panel. All rights reserved.</p>
+            <p>Version 1.0.0</p>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>

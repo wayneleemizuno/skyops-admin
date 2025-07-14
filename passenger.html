@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SkyOps Admin Panel for inflight management and operations.">
+    <meta name="keywords" content="inflight, admin, airline, management, dashboard, crew, passenger">
+    <meta name="author" content="Wayne Lee">
+    <title>SkyOps Admin - Passenger</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/media_queries.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <div class="app-container">
+
+        <header class="top-bar">
+            <img class="logo" src="img/airplane-logo.png" alt="logo">
+
+            <span class="flight-number-container"><span class="airline-code">BA</span><span
+                    class="flight-number">924</span>
+            </span>
+        </header>
+
+        <div class="content-container">
+            <nav class="menu-container">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="index.html" class="menu-link">Dashboard</a>
+                        <a href="index.html" class="menu-item-icon">📊</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Flight</a>
+                        <a href="#" class="menu-item-icon">✈️</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Cabin</a>
+                        <a href="#" class="menu-item-icon">💺</a>
+                    </li>
+                    <li class="menu-item-current">
+                        <span class="menu-current">Passenger</span>
+                        <span class="menu-item-icon-current">🧍</span>
+                    </li>
+                    <li class="menu-item">
+                        <a href="crew.html" class="menu-link">Crew</a>
+                        <a href="crew.html" class="menu-item-icon">👨‍✈️</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Service</a>
+                        <a href="#" class="menu-item-icon">🍽️</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Map</a>
+                        <a href="#" class="menu-item-icon">🗺️</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Settings</a>
+                        <a href="#" class="menu-item-icon">⚙️</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main class="passenger-content-area">
+                <div class="passenger-cabin-group-container">
+                    <h2>Business Class</h2>
+                    <div class="passenger-table-container">
+                        <!-- Left Block (Seats A & B) -->
+                        <table class="seat-block">
+                            <tr>
+                                <td class="seat" id="1A">1A <span class="pax-name"></span></td>
+                                <td class="seat" id="1B">1B <span class="pax-name"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="seat" id="2A">2A <span class="pax-name"></span></td>
+                                <td class="seat" id="2B">2B <span class="pax-name"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="seat" id="3A">3A <span class="pax-name"></span></td>
+                                <td class="seat" id="3B">3B <span class="pax-name"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="seat" id="4A">4A <span class="pax-name"></span></td>
+                                <td class="seat" id="4B">4B <span class="pax-name"></span></td>
+                            </tr>
+                        </table>
+
+                        <!-- Center Block (Seats D & E) -->
+                        <table class="seat-block">
+                            <tr>
+                                <td class="seat" id="1D">1D <span class="pax-name"></span></td>
+                                <td class="seat" id="1E">1E <span class="pax-name"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="seat" id="2D">2D <span class="pax-name"></span></td>
+                                <td class="seat" id="2E">2E <span class="pax-name"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="seat" id="3D">3D <span class="pax-name"></span></td>
+                                <td class="seat" id="3E">3E <span class="pax-name"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="seat" id="4D">4D <span class="pax-name"></span></td>
+                                <td class="seat" id="4E">4E <span class="pax-name"></span></td>
+                            </tr>
+                        </table>
+
+                        <!-- Right Block (Seats G & H) -->
+                        <table class="seat-block">
+                            <tr>
+                                <td class="seat" id="1G">1G <span class="pax-name"></span></td>
+                                <td class="seat" id="1H">1H <span class="pax-name"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="seat" id="2G">2G <span class="pax-name"></span></td>
+                                <td class="seat" id="2H">2H <span class="pax-name"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="seat" id="3G">3G <span class="pax-name"></span></td>
+                                <td class="seat" id="3H">3H <span class="pax-name"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="seat" id="4G">4G <span class="pax-name"></span></td>
+                                <td class="seat" id="4H">4H <span class="pax-name"></span></td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+
+                <div class="passenger-cabin-group-container">
+                    <h2>Economy Class</h2>
+                    <div class="passenger-table-container" id="economy-blocks">
+                        <!-- JS will insert the tables here -->
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2025 SkyOps Admin Panel. All rights reserved.</p>
+            <p>Version 1.0.0</p>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>
