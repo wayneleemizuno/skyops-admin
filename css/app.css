@@ -15,6 +15,7 @@ a {
 /*-----GLOBAL VARIABLES-----*/
 :root {
 	/* colors */
+	/* --default theme-- */
 	--color-primary: #5eb8ba;
 	--color-analogous: #428587;
 	--color-analogous-lighter: #c3e5e8;
@@ -31,6 +32,18 @@ html {
 	font-size: 62.5%;
 	font-family: "Noto Sans", sans-serif;
 	background-color: var(--color-alt-background);
+}
+
+optgroup {
+	font-size: 1.8rem;
+	color: var(--color-neutral-constrast);
+	background: var(--color-analogous-lighter);
+}
+
+option {
+	font-family: "Noto Sans";
+	font-size: 1.5rem;
+	background: var(--color-light-background);
 }
 
 .app-container {
@@ -99,16 +112,6 @@ html {
 	background-color: var(--color-complimentary);
 }
 
-.top-menu-container {
-	display: none;
-}
-
-.top-info-container {
-	display: flex;
-	gap: 0.5rem;
-	width: 80%;
-}
-
 /* NAVIGATION BAR */
 .menu-container {
 	overflow: scroll;
@@ -157,12 +160,12 @@ html {
 	justify-content: center;
 	align-items: center;
 	width: 4rem;
-	border-radius: 0.5rem;
+	border-radius: 1rem;
 	padding: 0.5rem;
 }
 
 .menu-item-icon {
-	background-color: var(--color-alt-background);
+	background-color: var(--color-analogous-lighter);
 }
 
 .menu-link {
@@ -547,9 +550,10 @@ html {
 }
 
 /*-----Cabin Page-----*/
-/* .cabin-content-container {
-	width: 100%;
-} */
+.cabin-menu-container {
+	position: sticky;
+	top: 0;
+}
 
 .cabin-menu {
 	list-style: none;
@@ -570,7 +574,7 @@ html {
 	font-weight: 600;
 	text-transform: uppercase;
 	color: var(--color-analogous);
-	border: 2px solid var(--color-primary);
+	background-color: var(--color-analogous-lighter);
 	gap: 0.5rem;
 	max-width: 13rem;
 	width: 100%;
@@ -580,23 +584,84 @@ html {
 
 .cabin-menu-item:hover,
 .cabin-menu-item:active {
-	background-color: var(--color-analogous-lighter);
-	border: 2px solid var(--color-analogous-lighter);
+	background-color: var(--color-primary);
 }
 
 .cabin-menu-link {
 	display: flex;
 	width: 100%;
 	height: 100%;
+	align-items: center;
 }
 
 .cabin-menu-item-text {
-	justify-content: left;
+	justify-content: right;
 }
 
 .cabin-menu-link,
 .cabin-menu-link:visited {
-	color: var(--color-neutral-constrast);
+	color: var(--color-soft-contrast);
+}
+
+.cabin-control-category-title {
+	font-size: 1.8rem;
+	font-weight: 500;
+	font-family: Montserrat;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.description-label {
+	font-size: 2rem;
+}
+
+/* Cabin Page - PA Announcement Section*/
+.pa-selection-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+.pa-selection-dropdown {
+	width: 100%;
+	max-width: 40rem;
+	background-color: var(--color-primary);
+	height: 4rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border: none;
+}
+
+input[type="search"] {
+	font-size: 1.5rem;
+	font-family: "Noto Sans";
+	width: 100%;
+	max-width: 40rem;
+	background-color: var(--color-analogous-lighter);
+	height: 4rem;
+	border: none;
+}
+
+.pa-audio-control-bar {
+	max-width: 30rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	gap: 2rem;
+	background-color: var(--color-analogous);
+}
+
+.audio-control-btn {
+	width: 100%;
+	max-width: 4rem;
+	padding: 0.5rem;
+	opacity: 0.5;
+	background-color: var(--color-analogous-lighter);
+}
+
+.cabin-menu-item-ico {
+	width: 100%;
+	max-width: 3rem;
+	opacity: 0.45;
 }
 
 /*-----Crew Page-----*/

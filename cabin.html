@@ -87,57 +87,81 @@
                 <nav class="cabin-menu-container">
                     <ul class="cabin-menu">
                         <li class="cabin-menu-item">
-                            <a class="cabin-menu-item-ico cabin-menu-link" href="#">📢</a>
+                            <a class="cabin-menu-link" href="#"><img class="cabin-menu-item-ico"
+                                    src="img/cabin_page/cabin_menu_pa.png" alt="loud speaker bw emoji"></a>
                             <a class="cabin-menu-item-text cabin-menu-link" href="#">PA</a>
                         </li>
                         <li class="cabin-menu-item">
-                            <a class="cabin-menu-item-ico cabin-menu-link" href="#">🌡️</a>
+                            <a class="cabin-menu-link" href="#"><img class="cabin-menu-item-ico"
+                                    src="img/cabin_page/cabin_menu_ac.png" alt="thermometer bw emoji"></a>
                             <a class="cabin-menu-item-text cabin-menu-link" href="#">AC</a>
                         </li>
                         <li class="cabin-menu-item">
-                            <a class="cabin-menu-item-ico cabin-menu-link" href="#">🎶</a>
+                            <a class="cabin-menu-link" href="#"><img class="cabin-menu-item-ico"
+                                    src="img/cabin_page/cabin_menu_music.png" alt="musical notes bw
+                                emoji"></a>
                             <a class="cabin-menu-item-text cabin-menu-link" href="#">Music</a>
                         </li>
                         <li class="cabin-menu-item">
-                            <a class="cabin-menu-item-ico cabin-menu-link" href="#">💡</a>
-                            <a class="cabin-menu-item-text cabin-menu-link" href="#">Lights</a>
+                            <a class="cabin-menu-link" href="#"><img class="cabin-menu-item-ico"
+                                    src="img/cabin_page/cabin_menu_light.png" alt="light bulb bw emoji"></a>
+                            <a class="cabin-menu-item-text cabin-menu-link" href="#">Light</a>
                         </li>
                         <li class="cabin-menu-item">
-                            <a class="cabin-menu-item-ico cabin-menu-link" href="#">🪟</a>
-                            <a class="cabin-menu-item-text cabin-menu-link" href="#">Shades</a>
+                            <a class="cabin-menu-link" href="#"><img class="cabin-menu-item-ico"
+                                    src="img/cabin_page/cabin_menu_shade.png" alt="window bw emoji"></a>
+                            <a class="cabin-menu-item-text cabin-menu-link" href="#">Shade</a>
                         </li>
                     </ul>
                 </nav>
 
                 <section class="cabin-control-container cabin-control-container-pa">
                     <h2 class="cabin-control-category-title">Announcement</h2>
-                    <label for="pa-lib">Choose an announcement track<br>
-                        <select name="pa-lib" id="pa-lib">
-                            <optgroup label="Hospitality">
-                                <option value="arrival">We will be arriving shortly</option>
-                                <option value="breakfast">Breakfast is now being served</option>
-                                <option value="weather">The weather at our destination is sunny and warm</option>
-                                <option value="welcome">Welcome aboard and thank you for choosing us</option>
-                            </optgroup>
-                            <optgroup label="Safety">
-                                <option value="evacuation">Emergency evacuation procedure</option>
-                                <option value="seatbelt">Please fasten your seatbelt</option>
-                                <option value="secure-items">Please stow your loose items securely</option>
-                                <option value="smoke">Smoking is strictly prohibited</option>
-                            </optgroup>
-                            <optgroup label="Service Updates">
-                                <option value="cleaning">Sanitization is underway for your safety</option>
-                                <option value="crew">Your cabin crew is here to assist you</option>
-                                <option value="delay">We apologize for the delay</option>
-                                <option value="wifi">Wi-Fi is now available</option>
-                            </optgroup>
-                        </select>
-                    </label>
-                    <label for="pa-search"><input type="search" name="pa-search" id="pa-search">Search</label>
+                    <div class="pa-selection-container">
+                        <div class="pa-selection-dropdown-container">
+                            <label for="pa-lib">
+                                <p class="description-label">select announcement track</p>
+                                <select name="pa-lib" id="pa-lib" class="pa-selection-dropdown">
+                                    <optgroup label="Hospitality">
+                                        <option value="default" selected>select a track to play</option>
+                                        <option value="arrival">We will be arriving shortly</option>
+                                        <option value="breakfast">Breakfast is now being served</option>
+                                        <option value="weather">The weather at our destination is sunny and warm
+                                        </option>
+                                        <option value="welcome">Welcome aboard and thank you for choosing us</option>
+                                    </optgroup>
+                                    <optgroup label="Safety">
+                                        <option value="evacuation">Emergency evacuation procedure</option>
+                                        <option value="seatbelt">Please fasten your seatbelt</option>
+                                        <option value="secure-items">Please stow your loose items securely</option>
+                                        <option value="smoke">Smoking is strictly prohibited</option>
+                                    </optgroup>
+                                    <optgroup label="Service Updates">
+                                        <option value="cleaning">Sanitization is underway for your safety</option>
+                                        <option value="crew">Your cabin crew is here to assist you</option>
+                                        <option value="delay">We apologize for the delay</option>
+                                        <option value="wifi">Wi-Fi is now available</option>
+                                    </optgroup>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="pa-search-container">
+                            <label for="pa-search">
+                                <p class="description-label">Search</p><input type="search" name="pa-search"
+                                    id="pa-search" class="pa-search-bar">
+                            </label>
+                        </div>
 
+                    </div>
 
-
-
+                    <div class="pa-audio-control-bar">
+                        <img class="audio-control-btn" src="img/cabin_page/audio_play_button.png"
+                            alt="audio_play_button">
+                        <img class="audio-control-btn" src="img/cabin_page/audio_pause_button.png"
+                            alt="audio_pause_button">
+                        <img class="audio-control-btn" src="img/cabin_page/audio_stop_button.png"
+                            alt="audio_play_button">
+                    </div>
                 </section>
 
                 <section class="cabin-control-container cabin-control-container-ac">
