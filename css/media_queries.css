@@ -219,4 +219,23 @@
 	.cabin-menu-item-ico {
 		justify-self: center;
 	}
+
+	.ac-ctrl-container {
+		justify-content: center;
+		gap: 0.5rem;
+	}
+
+	.ac-function-container {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.ac-fanspeed-container,
+	.ac-temp-container {
+		align-self: auto;
+	}
+
+	.ac-fan-btn-container {
+		align-items: center;
+	}
 }

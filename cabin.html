@@ -115,12 +115,14 @@
                     </ul>
                 </nav>
 
-                <section class="cabin-control-container cabin-control-container-pa">
-                    <h2 class="cabin-control-category-title">Announcement</h2>
+                <section class="cabin-ctrl-container cabin-ctrl-container-pa">
+                    <div class="cabin-ctrl-category-title-container">
+                        <h2 class="cabin-ctrl-category-title">Announcement</h2>
+                    </div>
                     <div class="pa-selection-container">
                         <div class="pa-selection-dropdown-container">
                             <label for="pa-lib">
-                                <p class="description-label">select announcement track</p>
+                                <span class="description-label">select announcement track</span>
                                 <select name="pa-lib" id="pa-lib" class="pa-selection-dropdown">
                                     <optgroup label="Hospitality">
                                         <option value="default" selected>select a track to play</option>
@@ -147,37 +149,135 @@
                         </div>
                         <div class="pa-search-container">
                             <label for="pa-search">
-                                <p class="description-label">Search</p><input type="search" name="pa-search"
+                                <span class="description-label">🔍</span><input type="search" name="pa-search"
                                     id="pa-search" class="pa-search-bar">
                             </label>
                         </div>
-
                     </div>
-
-                    <div class="pa-audio-control-bar">
-                        <img class="audio-control-btn" src="img/cabin_page/audio_play_button.png"
-                            alt="audio_play_button">
-                        <img class="audio-control-btn" src="img/cabin_page/audio_pause_button.png"
+                    <div class="pa-current-container">
+                        <span class="description-label">currently selected</span>
+                        <h3 class="pa-current-track-title">None</h3>
+                        <div class="pa-current-script-container">
+                            <p class="pa-current-script">script:
+                                Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Sapiente aperiam autem error at beatae odit quas aut consectetur porro debitis
+                                est, voluptatum nulla dolores exercitationem inventore delectus laudantium reprehenderit
+                                nesciunt?
+                                Molestias suscipit esse quisquam corrupti deserunt ducimus assumenda vel ut dolor,
+                                consequatur facilis quos quod sed itaque deleniti, unde minima aut aspernatur numquam
+                                eum eligendi incidunt culpa. Et, inventore cupiditate.
+                                Vero iure inventore quidem repellat numquam adipisci nostrum, beatae mollitia optio,
+                                perferendis animi ratione sed amet, a ex vel consectetur reprehenderit. Laboriosam
+                                itaque dolorum esse, cum labore iure laborum expedita.</p>
+                        </div>
+                    </div>
+                    <div class="pa-audio-ctrl-bar">
+                        <img class="audio-ctrl-btn" src="img/cabin_page/audio_play_button.png" alt="audio_play_button">
+                        <img class="audio-ctrl-btn" src="img/cabin_page/audio_pause_button.png"
                             alt="audio_pause_button">
-                        <img class="audio-control-btn" src="img/cabin_page/audio_stop_button.png"
-                            alt="audio_play_button">
+                        <img class="audio-ctrl-btn" src="img/cabin_page/audio_stop_button.png" alt="audio_play_button">
                     </div>
                 </section>
 
-                <section class="cabin-control-container cabin-control-container-ac">
-                    <h2 class="cabin-control-category-title">Temperature</h2>
+                <section class="cabin-ctrl-container cabin-ctrl-container-ac">
+                    <div class="cabin-ctrl-category-title-container">
+                        <h2 class="cabin-ctrl-category-title">Air Conditioning</h2>
+                    </div>
+                    <div class="ac-ctrl-container">
+                        <div class="ac-ctrl-area-container ac-ctrl-area-container-front">
+                            <h3 class="ac-ctrl-area-label">Front</h3>
+                            <div class="ac-function-container">
+                                <div class="ac-fanspeed-container">
+                                    <h4 class="ac-ctrl-label">Fan</h4>
+                                    <div class="ac-fan-btn-container">
+                                        <span class="ac-fanspeed-btn">auto</span>
+                                        <span class="ac-fanspeed-btn">low</span>
+                                        <span class="ac-fanspeed-btn">mid</span>
+                                        <span class="ac-fanspeed-btn">high</span>
+                                        <span class="ac-fanspeed-btn">max</span>
+                                    </div>
+                                </div>
+                                <div class="ac-temp-container">
+                                    <h4 class="ac-ctrl-label">Temp</h>
+                                        <span class="ac-temp-value">23</span>
+                                        <div class="ac-temp-btn-container">
+                                            <img class="ac-arrow-btn" src="img/cabin_page/up-arrow.png"
+                                                alt="up arrow icon">
+                                            <img class="ac-arrow-btn" src="img/cabin_page/down-arrow.png"
+                                                alt="down arrow icon">
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ac-ctrl-area-container ac-ctrl-area-container-middle">
+                            <h3 class="ac-ctrl-area-label">Middle</h3>
+                            <div class="ac-function-container">
+                                <div class="ac-fanspeed-container">
+                                    <h4 class="ac-ctrl-label">Fan</h4>
+                                    <div class="ac-fan-btn-container">
+                                        <span class="ac-fanspeed-btn">auto</span>
+                                        <span class="ac-fanspeed-btn">low</span>
+                                        <span class="ac-fanspeed-btn">mid</span>
+                                        <span class="ac-fanspeed-btn">high</span>
+                                        <span class="ac-fanspeed-btn">max</span>
+                                    </div>
+                                </div>
+                                <div class="ac-temp-container">
+                                    <h4 class="ac-ctrl-label">Temp</h>
+                                        <span class="ac-temp-value">23</span>
+                                        <div class="ac-temp-btn-container">
+                                            <img class="ac-arrow-btn" src="img/cabin_page/up-arrow.png"
+                                                alt="up arrow icon">
+                                            <img class="ac-arrow-btn" src="img/cabin_page/down-arrow.png"
+                                                alt="down arrow icon">
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ac-ctrl-area-container ac-ctrl-area-container-aft">
+                            <h3 class="ac-ctrl-area-label">Aft</h3>
+                            <div class="ac-function-container">
+                                <div class="ac-fanspeed-container">
+                                    <h4 class="ac-ctrl-label">Fan</h4>
+                                    <div class="ac-fan-btn-container">
+                                        <span class="ac-fanspeed-btn">auto</span>
+                                        <span class="ac-fanspeed-btn">low</span>
+                                        <span class="ac-fanspeed-btn">mid</span>
+                                        <span class="ac-fanspeed-btn">high</span>
+                                        <span class="ac-fanspeed-btn">max</span>
+                                    </div>
+                                </div>
+                                <div class="ac-temp-container">
+                                    <h4 class="ac-ctrl-label">Temp</h>
+                                        <span class="ac-temp-value">23</span>
+                                        <div class="ac-temp-btn-container">
+                                            <img class="ac-arrow-btn" src="img/cabin_page/up-arrow.png"
+                                                alt="up arrow icon">
+                                            <img class="ac-arrow-btn" src="img/cabin_page/down-arrow.png"
+                                                alt="down arrow icon">
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+
                 </section>
 
-                <section class="cabin-control-container cabin-control-container-lights">
-                    <h2 class="cabin-control-category-title">Lighting</h2>
+                <section class="cabin-ctrl-container cabin-ctrl-container-lights">
+                    <div class="cabin-ctrl-category-title-container">
+                        <h2 class="cabin-ctrl-category-title">Lighting</h2>
+                    </div>
                 </section>
 
-                <section class="cabin-control-container cabin-control-container-music">
-                    <h2 class="cabin-control-category-title">Music</h2>
+                <section class="cabin-ctrl-container cabin-ctrl-container-music">
+                    <div class="cabin-ctrl-category-title-container">
+                        <h2 class="cabin-ctrl-category-title">Music</h2>
+                    </div>
                 </section>
 
-                <section class="cabin-control-container cabin-control-container-shades">
-                    <h2 class="cabin-control-category-title">Shades</h2>
+                <section class="cabin-ctrl-container cabin-ctrl-container-shades">
+                    <div class="cabin-ctrl-category-title-container">
+                        <h2 class="cabin-ctrl-category-title">Shades</h2>
+                    </div>
                 </section>
 
             </main>
