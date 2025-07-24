@@ -2,6 +2,10 @@
 	html {
 		font-size: 50%;
 	}
+
+	.ac-temp-value {
+		font-size: 7rem;
+	}
 }
 
 @media (max-width: 64.5rem) {
@@ -68,6 +72,10 @@
 	.crew-profile-pic {
 		max-width: 15rem;
 	}
+
+	.ac-arrow-btn {
+		max-width: 5rem;
+	}
 }
 
 @media (max-width: 47.5rem) {
@@ -91,6 +99,16 @@
 
 	.crew-group-card-container {
 		gap: 1.5rem;
+	}
+
+	.ac-temp-btn-container {
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		justify-content: center;
+	}
+
+	.ac-temp-value {
+		font-size: 5rem;
 	}
 }
 
@@ -220,22 +238,15 @@
 		justify-self: center;
 	}
 
-	.ac-ctrl-container {
-		justify-content: center;
-		gap: 0.5rem;
-	}
-
 	.ac-function-container {
-		flex-direction: column;
-		text-align: center;
+		grid-template-columns: 1fr;
 	}
 
-	.ac-fanspeed-container,
-	.ac-temp-container {
-		align-self: auto;
+	.ac-temp-btn-container {
+		margin: 1rem 0;
 	}
 
-	.ac-fan-btn-container {
-		align-items: center;
+	.ac-temp-value {
+		font-size: 4rem;
 	}
 }

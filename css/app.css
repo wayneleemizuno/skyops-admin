@@ -43,7 +43,7 @@ optgroup {
 option {
 	font-family: "Noto Sans";
 	font-size: 1.5rem;
-	background: var(--color-light-background);
+	background: var(--color-alt-background);
 }
 
 .app-container {
@@ -563,6 +563,7 @@ option {
 	top: 0;
 	background-color: var(--color-alt-background);
 	border-bottom: 2px solid var(--color-analogous);
+	z-index: 2;
 }
 
 .cabin-menu {
@@ -638,15 +639,21 @@ option {
 
 /* Cabin Page - PA Announcement Section*/
 .pa-selection-container {
+	width: 100%;
+	max-width: 80rem;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 1rem;
 	justify-content: space-evenly;
+	align-items: center;
+	background-color: var(--color-primary);
+	padding: 1rem;
+	border-radius: 1rem;
 }
 .pa-selection-dropdown {
 	width: 100%;
 	max-width: 60rem;
-	background-color: var(--color-analogous-lighter);
+	background-color: var(--color-alt-background);
 	height: 4rem;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -655,7 +662,8 @@ option {
 }
 
 input[type="search"] {
-	width: 35rem;
+	max-width: 35rem;
+	width: 100%;
 	font-size: 1.5rem;
 	font-family: "Noto Sans";
 	background-color: var(--color-analogous-lighter);
@@ -723,56 +731,76 @@ input[type="search"] {
 
 /* Cabin Page - AC Temperature Section*/
 .ac-ctrl-container {
-	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
 	gap: 1rem;
+	width: 100%;
 }
 
 .ac-ctrl-area-container {
-	width: 100%;
-	background-color: var(--color-analogous-lighter);
-	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
 	align-items: center;
 	border-radius: 1rem;
+	width: 100%;
 }
 
 .ac-ctrl-area-label {
+	width: 100%;
 	font-size: 2rem;
 	font-weight: 600;
-	color: var(--color-complimentary-darker);
+	color: var(--color-neutral-constrast);
+	background-color: var(--color-analogous-lighter);
+	border-radius: 1rem;
+	padding: 0.5rem;
 	text-transform: uppercase;
 	text-align: center;
-	margin-bottom: 1rem;
 }
 
 .ac-function-container {
-	display: flex;
-	gap: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	width: 100%;
-	justify-content: space-evenly;
+	border: 2px solid var(--color-analogous-lighter);
+	border-radius: 1rem;
+	padding: 1rem;
+	gap: 1rem;
 }
 
 .ac-fanspeed-container,
 .ac-temp-container {
-	align-self: start;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-primary);
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+	align-items: center;
+}
+
+.ac-temp-btn-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 
 .ac-fan-btn-container {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 1rem;
 	margin-bottom: 1rem;
+	width: 100%;
+	max-width: 15rem;
 }
 
 .ac-fanspeed-btn {
 	width: 100%;
-	max-width: 6rem;
 	font-size: 1.8rem;
 	font-weight: 500;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 0 0.5rem;
+	padding: 0.5rem 0.8rem;
 	background-color: var(--color-alt-background);
 	border-radius: 0.5rem;
 	color: var(--color-neutral-constrast);
@@ -784,40 +812,47 @@ input[type="search"] {
 }
 
 .ac-ctrl-label {
+	width: 100%;
 	font-size: 2rem;
 	font-weight: 500;
 	text-transform: uppercase;
-	color: var(--color-primary);
+	color: var(--color-alt-background);
 	margin-bottom: 1rem;
+	text-align: center;
+	border-bottom: 2px dotted var(--color-analogous-lighter);
+}
+
+.ac-temp-value-container {
+	width: 100%;
+	max-width: 15rem;
+	background-color: var(--color-analogous);
+	padding: 0 1rem;
+	border-radius: 0.5rem;
+	/* margin: auto; */
 	text-align: center;
 }
 
 .ac-temp-value {
-	display: block;
-	font-size: 4rem;
+	font-size: 10rem;
 	font-weight: 700;
 	color: var(--color-light-background);
-	background-color: var(--color-primary);
-	padding: 0 1rem;
-	border-radius: 0.5rem;
-	margin: 1rem 0;
 }
 
 .ac-temp-btn-container {
 	display: flex;
 	gap: 1rem;
-	justify-content: center;
-	flex-wrap: wrap;
-	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 15rem;
+	margin: auto;
 }
 
 .ac-arrow-btn {
 	width: 100%;
-	max-width: 5rem;
+	max-width: 6rem;
 	opacity: 0.5;
 	padding: 0.5rem;
 	border-radius: 0.5rem;
-	background-color: var(--color-primary);
 }
 
 .ac-arrow-btn:hover,
