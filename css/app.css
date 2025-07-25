@@ -46,6 +46,11 @@ option {
 	background: var(--color-alt-background);
 }
 
+input [type="radio"] {
+	margin-right: 0.5rem;
+	vertical-align: middle;
+}
+
 .app-container {
 	max-width: 1800px;
 	margin: 0 auto;
@@ -620,7 +625,7 @@ option {
 
 .cabin-ctrl-category-title {
 	font-size: 1.8rem;
-	font-weight: 500;
+	font-weight: 600;
 	font-family: Montserrat;
 	text-transform: uppercase;
 	text-align: center;
@@ -859,6 +864,110 @@ input[type="search"] {
 .ac-arrow-btn:active {
 	opacity: 1;
 	background-color: var(--color-complimentary);
+}
+
+/* Cabin Page - Lighting Section*/
+.cabin-light-class-select-container {
+	width: 100%;
+	background-color: var(--color-analogous-lighter);
+	border-radius: 1rem;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0.5rem 1rem;
+}
+
+.cabin-light-class-select-container label {
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: var(--color-neutral-constrast);
+}
+
+.cabin-light-class-container {
+	width: 100%;
+}
+
+.cabin-light-ctrl-mode-select-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	border-bottom: 2px dotted var(--color-analogous);
+	margin-bottom: 1rem;
+}
+
+.cabin-light-ctrl-mode-select-container label {
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: var(--color-analogous);
+}
+
+.cabin-light-auto-container {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 1rem;
+	border: 2px solid var(--color-primary);
+	border-radius: 1rem;
+}
+
+.cabin-light-auto-container label {
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: var(--color-neutral-constrast);
+}
+
+.light-manual-label-group {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3rem;
+	margin-bottom: 1rem;
+}
+
+.light-manual-label-group label {
+	font-size: 2rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: right;
+	color: var(--color-neutral-constrast);
+}
+
+.cabin-light-color-temp-container {
+	padding: 1rem;
+}
+
+.slider-reset-btn {
+	font-size: 1.8rem;
+	padding: 0, 1rem;
+	background-color: var(--color-primary);
+	border: 1.5px solid var(--color-primary);
+	border-radius: 0.5rem;
+	max-width: 15rem;
+	color: var(--color-light-background);
+	text-transform: uppercase;
+}
+
+.slider-reset-btn:hover {
+	border: 1.5px solid var(--color-analogous);
+}
+.slider-reset-btn:active {
+	background-color: var(--color-complimentary);
+	border: 1.5px solid var(--color-complimentary);
+}
+
+.color-temp-slider {
+	width: 100%;
+}
+
+.color-temp-label-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.color-temp-label {
+	font-size: 2rem;
 }
 
 /*-----Crew Page-----*/
