@@ -224,18 +224,26 @@
 		gap: 1rem;
 	}
 
-	.cabin-menu-item {
-		width: 4rem;
-		height: 4rem;
-		padding: 0.5rem;
+	.crew-profile-card {
+		padding: 1rem;
+		max-width: 17rem;
+	}
+
+	.crew-profile-header {
+		gap: 0.5rem;
+	}
+
+	.crew-full-name,
+	.crew-rank,
+	.crew-current-position-label,
+	.crew-current-status-label,
+	.crew-current-position-value,
+	.crew-current-status-value {
+		font-size: 1.5rem;
 	}
 
 	.cabin-menu-item-text {
 		display: none;
-	}
-
-	.cabin-menu-item-ico {
-		justify-self: center;
 	}
 
 	.ac-function-container {
