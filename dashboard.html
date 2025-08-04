@@ -84,6 +84,7 @@
             </nav>
 
             <main class="main-content-container dashboard-content-container">
+                <!-- FEED -->
                 <div class="modular-panel mp-feed">
                     <div class="modular-panel-title-container">
                         <h3 class="modular-panel-title">Feed</h3>
@@ -134,7 +135,7 @@
                             cycle.</p>
                     </div>
                 </div>
-
+                <!-- PENDING REQUESTS -->
                 <div class="modular-panel mp-pending-requests">
                     <div class="modular-panel-title-container">
                         <h3 class="modular-panel-title">Pending Requests</h3>
@@ -252,6 +253,7 @@
                         <span class="request-content">Coke with ice</span>
                     </div>
                 </div>
+                <!-- REMINDERS -->
                 <div class="modular-panel mp-reminders">
                     <div class="modular-panel-title-container">
                         <h3 class="modular-panel-title">Reminders</h3>
@@ -289,8 +291,6 @@
                                     Distribute headsets in economy
                                 </label>
                             </li>
-
-                            <!-- New reminders -->
                             <li>
                                 <label class="reminder-text">
                                     <input type="checkbox" name="reminder6" class="reminder-checkbox">
@@ -324,7 +324,7 @@
                         </ul>
                     </div>
                 </div>
-
+                <!-- FLIGHT STATUS -->
                 <div class="modular-panel mp-flight-status">
                     <div class="modular-panel-title-container">
                         <h3 class="modular-panel-title">Flight Status</h3>
@@ -361,7 +361,7 @@
 
                     </div>
                 </div>
-
+                <!-- CREW STATUS -->
                 <div class="modular-panel mp-crew-status">
                     <div class="modular-panel-title-container">
                         <h3 class="modular-panel-title">Crew Status</h3>
@@ -530,7 +530,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- LIGHTING -->
                 <div class="modular-panel mp-lighting">
                     <div class="modular-panel-title-container">
                         <h3 class="modular-panel-title">Lighting</h3>
@@ -567,7 +567,30 @@
                         </div>
                     </div>
                 </div>
+                <!-- MUSIC -->
+                <div class="modular-panel mp-music">
+                    <div class="modular-panel-title-container">
+                        <h3 class="modular-panel-title">Music</h3>
+                        <span class="modular-panel-title-ico">🎵</span>
+                    </div>
+                    <div class="modular-panel-content-container music-status-container">
+                        <div class="currently-playing-container">
+                            <p class="currently-playing-title">Echoes of a Distant Midnight Symphony</p>
+                            <p class="currently-playing-artist">The Celestial Wanderers and the Harmonic Collective</p>
+                        </div>
 
+                        <div class="slide-ctrl-container">
+                            <label for="music-volume" class="music-volume-label">Volume</label>
+                            <input class="slider" type="range" name="music-volume" id="music-volume" min="0" max="100"
+                                step="5">
+                            <div class="slider-label-container">
+                                <span class="slider-label shade-label">➕</span>
+                                <span class="slider-label shade-label">➖</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- WIFI -->
                 <div class="modular-panel mp-wifi">
                     <div class="modular-panel-title-container">
                         <h3 class="modular-panel-title">Wi-Fi</h3>
@@ -576,7 +599,6 @@
                     <div class="modular-panel-content-container wifi-status-container">
                         <p class="wifi-status" id="wifi-status">on</p>
                     </div>
-
                 </div>
         </div>
 

@@ -102,7 +102,10 @@
                             alt="musical notes bw emoji">
                         <span class="cabin-menu-item-text">Music</span>
                     </button>
-
+                    <button type="button" class="cabin-menu-btn" id="cabin-menu-btn-entertainment">
+                        <img class="cabin-menu-item-ico" src="img/cabin_page/cabin_menu_ife.png" alt="film bw emoji">
+                        <span class="cabin-menu-item-text">IFE</span>
+                    </button>
                     <button type="button" class="cabin-menu-btn" id="cabin-menu-btn-light">
                         <img class="cabin-menu-item-ico" src="img/cabin_page/cabin_menu_light.png"
                             alt="light bulb bw emoji">
@@ -116,7 +119,7 @@
                     </button>
                 </nav>
                 <!-- PA SECTION -->
-                <section class="cabin-ctrl-section-container">
+                <section class="cabin-ctrl-section-container" id="cabin-pa-section">
                     <div class="cabin-ctrl-category-title-container">
                         <h2 class="cabin-ctrl-category-title">Announcement</h2>
                     </div>
@@ -177,7 +180,7 @@
                     </div>
                 </section>
                 <!-- AC SECTION -->
-                <section class="cabin-ctrl-section-container">
+                <section class="cabin-ctrl-section-container" id="cabin-ac-section">
                     <div class="cabin-ctrl-category-title-container">
                         <h2 class="cabin-ctrl-category-title">Air Conditioning</h2>
                     </div>
@@ -271,12 +274,12 @@
                     </div>
                 </section>
                 <!-- LIGHT SECTION -->
-                <section class="cabin-ctrl-section-container">
+                <section class="cabin-ctrl-section-container" id="cabin-light-section">
                     <div class="cabin-ctrl-category-title-container">
                         <h2 class="cabin-ctrl-category-title">Lighting</h2>
                     </div>
                     <!-- light class selection -->
-                    <div class="cabin-light-class-select-container">
+                    <div class="section-bar">
                         <div class="input-label-group">
                             <input type="radio" id="light-c" name="light-class">
                             <label for="light-c">Business</label>
@@ -286,10 +289,10 @@
                             <label for="light-y">Economy</label>
                         </div>
                     </div>
+
                     <!-- c class light control -->
                     <div class="cabin-light-class-container" id="cabin-light-class-container-c">
-                        <div class="cabin-light-ctrl-mode-select-container"
-                            id="cabin-light-ctrl-mode-select-container-c">
+                        <div class="sub-section-bar" id="cabin-light-ctrl-mode-select-container-c">
                             <div class="input-label-group">
                                 <input type="radio" id="light-auto-c" name="light-ctrl-mode">
                                 <label for="light-auto-c">Auto</label>
@@ -352,8 +355,7 @@
                     </div>
                     <!-- y class light control -->
                     <div class="cabin-light-class-container" id="cabin-light-class-container-y">
-                        <div class="cabin-light-ctrl-mode-select-container"
-                            id="cabin-light-ctrl-mode-select-container-y">
+                        <div class="sub-section-bar" id="cabin-light-ctrl-mode-select-container-y">
                             <div class="input-label-group">
                                 <input type="radio" id="light-auto-y" name="light-ctrl-mode">
                                 <label for="light-auto-y">Auto</label>
@@ -416,7 +418,7 @@
                     </div>
                 </section>
                 <!-- MUSIC SECTION -->
-                <section class="cabin-ctrl-section-container">
+                <section class="cabin-ctrl-section-container" id="cabin-music-section">
                     <div class="cabin-ctrl-category-title-container">
                         <h2 class="cabin-ctrl-category-title">Music</h2>
                     </div>
@@ -451,14 +453,95 @@
                         </button>
                     </div>
                 </section>
+                <!-- IFE ENTERTAINMENT SECTION -->
+                <section class="cabin-ctrl-section-container" id="cabin-ife-section">
+                    <div class="cabin-ctrl-category-title-container">
+                        <h2 class="cabin-ctrl-category-title">In-flight Entertainment</h2>
+                    </div>
+                    <div class="cabin-ife-container">
+                        <label for="ife-status" class="ife-status-label">IFE Status</label>
+                        <div class="toggle-container">
+                            <img src="img/red_circle_google.png" alt="red circle" class="toggle-label">
+                            <input type="range" name="ife-status" id="ife-status" min="0" max="50" step="50">
+                            <img src="img/green_circle_google.png" alt="green circle" class="toggle-label">
+                        </div>
+                        <!-- select IFE global or Individual seat control -->
+                        <div class="section-bar">
+                            <div class="input-label-group">
+                                <input type="radio" id="ife-global" name="ife-mode">
+                                <label for="ife-global">Global</label>
+                            </div>
+                            <div class="input-label-group">
+                                <input type="radio" id="ife-individual" name="ife-mode">
+                                <label for="ife-individual">Individual</label>
+                            </div>
+                        </div>
+                        <!-- IFE Global Control -->
+                        <div class="ife-section-container" id="ife-global-section">
+                            <h3>Global Control</h3>
+                            <div class="ife-ctrl-item-container">
+                                <label for="ife-media-pack" class="ife-ctrl-item-label">Media Pack</label>
+                                <select name="media-pack" id="ife-media-pack" class="ife-media-pack-select">
+                                    <optgroup label="Short">
+                                        <option value="short-1">Short: Pack 1</option>
+                                        <option value="short-2">Short: Pack 2</option>
+                                        <option value="short-3">Short: Pack 3</option>
+                                    </optgroup>
+                                    <optgroup label="Medium">
+                                        <option value="medium-1">Medium: Pack 1</option>
+                                        <option value="medium-2">Medium: Pack 2</option>
+                                        <option value="medium-3">Medium: Pack 3</option>
+                                    </optgroup>
+                                    <optgroup label="Long">
+                                        <option value="long-1">Long: Pack 1</option>
+                                        <option value="long-2">Long: Pack 2</option>
+                                        <option value="long-3">Long: Pack 3</option>
+                                    </optgroup>
+                                </select>
+                                <button type="button" class="ife-media-pack-apply-btn">Apply</button>
+                            </div>
+                            <div class="ife-ctrl-item-container">
+                                <label for="ife-global-parental-ctrl" class="ife-ctrl-item-label">Parental
+                                    Control</label>
+                                <div class="toggle-container">
+                                    <img src="img/red_circle_google.png" alt="red circle" class="toggle-label">
+                                    <input type="range" name="ife-status" id="ife-global-parental-ctrl" min="0" max="50"
+                                        step="50">
+                                    <img src="img/green_circle_google.png" alt="green circle" class="toggle-label">
+                                </div>
+                            </div>
+                            <!-- IFE Individual Control -->
+                        </div>
+                        <div class="ife-section-container" id="ife-individual-section">
+                            <h3>Individual Control</h3>
+                            <div class="ife-ctrl-item-container">
+                                <ul class="ife-individual-ctrl-instruction">
+                                    <li>use a comma to separate each seat (e.g. 43K, 49B)</li>
+                                    <li>to select a whole row, enter the row number only</li>
+                                    <li>to select a range, use a hyphen (e.g. 10A-13H) </li>
+                                </ul>
+                                <label for="ife-seat" class="ife-ctrl-item-label">Seat</label>
+                                <div class="ife-seat-input-container">
+                                    <input type="text" id="ife-seat" placeholder="enter seat number"
+                                        class="ife-seat-input">
+                                    <button type="button" class="ife-clear-seat-btn">clear</button>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </section>
                 <!-- SHADE SECTION -->
-                <section class="cabin-ctrl-section-container">
+                <section class="cabin-ctrl-section-container" id="cabin-shade-section">
                     <div class="cabin-ctrl-category-title-container">
                         <h2 class="cabin-ctrl-category-title">Shade</h2>
                     </div>
-
-                    <!-- shade class selection -->
-                    <div class="cabin-shade-class-select-container">
+                    <!-- Shade Control Class selection -->
+                    <div class="section-bar">
                         <div class="input-label-group">
                             <input type="radio" id="shade-c" name="shade-class">
                             <label for="shade-c">Business</label>
@@ -468,11 +551,9 @@
                             <label for="shade-y">Economy</label>
                         </div>
                     </div>
-
                     <!-- Business Class Shade Control -->
                     <div class="cabin-shade-class-container" id="cabin-shade-class-container-c">
-                        <div class="cabin-shade-ctrl-mode-select-container"
-                            id="cabin-shade-ctrl-mode-select-container-c">
+                        <div class="sub-section-bar" id="cabin-shade-ctrl-mode-select-container-c">
                             <div class="input-label-group">
                                 <input type="radio" id="shade-auto-c" name="shade-ctrl-mode">
                                 <label for="shade-auto-c">Auto</label>
@@ -530,8 +611,7 @@
 
                     <!-- Economy Class Shade Control -->
                     <div class="cabin-shade-class-container" id="cabin-shade-class-container-y">
-                        <div class="cabin-shade-ctrl-mode-select-container"
-                            id="cabin-shade-ctrl-mode-select-container-y">
+                        <div class="sub-section-bar" id="cabin-shade-ctrl-mode-select-container-y">
                             <div class="input-label-group">
                                 <input type="radio" id="shade-auto-y" name="shade-ctrl-mode">
                                 <label for="shade-auto-y">Auto</label>
