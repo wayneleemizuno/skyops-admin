@@ -89,6 +89,10 @@ input[type="search"] {
 	text-wrap: nowrap;
 }
 
+.hidden {
+	display: none;
+}
+
 .content-container {
 	display: flex;
 	height: 100%;
@@ -796,6 +800,7 @@ input[type="search"] {
 	padding: 0.5rem 1.5rem;
 	border-radius: 1rem;
 	border: none;
+	cursor: pointer;
 }
 
 .cabin-menu-btn:hover,

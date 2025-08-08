@@ -27,7 +27,6 @@
             </span>
             <a class="account-button" href=""><img class="account-ico" src="img/menu_ico/account.png"
                     alt="account function icon"></a>
-
         </header>
 
         <div class="content-container">
@@ -85,188 +84,198 @@
             <main class="main-content-container cabin-content-container">
 
                 <nav class="cabin-menu-container">
-                    <button type="button" class="cabin-menu-btn" id="cabin-menu-btn-pa">
+                    <button type="button" class="cabin-menu-btn" data-section="pa">
                         <img class="cabin-menu-item-ico" src="img/cabin_page/cabin_menu_pa.png"
                             alt="loud speaker bw emoji">
                         <span class="cabin-menu-item-text">PA</span>
                     </button>
 
-                    <button type="button" class="cabin-menu-btn" id="cabin-menu-btn-ac">
+                    <button type="button" class="cabin-menu-btn" data-section="ac">
                         <img class="cabin-menu-item-ico" src="img/cabin_page/cabin_menu_ac.png"
                             alt="thermometer bw emoji">
                         <span class="cabin-menu-item-text">AC</span>
                     </button>
 
-                    <button type="button" class="cabin-menu-btn" id="cabin-menu-btn-music">
+                    <button type="button" class="cabin-menu-btn" data-section="music">
                         <img class="cabin-menu-item-ico" src="img/cabin_page/cabin_menu_music.png"
                             alt="musical notes bw emoji">
                         <span class="cabin-menu-item-text">Music</span>
                     </button>
-                    <button type="button" class="cabin-menu-btn" id="cabin-menu-btn-entertainment">
+                    <button type="button" class="cabin-menu-btn" data-section="ife">
                         <img class="cabin-menu-item-ico" src="img/cabin_page/cabin_menu_ife.png" alt="film bw emoji">
                         <span class="cabin-menu-item-text">IFE</span>
                     </button>
-                    <button type="button" class="cabin-menu-btn" id="cabin-menu-btn-light">
+                    <button type="button" class="cabin-menu-btn" data-section="light">
                         <img class="cabin-menu-item-ico" src="img/cabin_page/cabin_menu_light.png"
                             alt="light bulb bw emoji">
                         <span class="cabin-menu-item-text">Light</span>
                     </button>
 
-                    <button type="button" class="cabin-menu-btn" id="cabin-menu-btn-shade">
+                    <button type="button" class="cabin-menu-btn" data-section="shade">
                         <img class="cabin-menu-item-ico" src="img/cabin_page/cabin_menu_shade.png"
                             alt="window bw emoji">
                         <span class="cabin-menu-item-text">Shade</span>
                     </button>
                 </nav>
+
                 <!-- PA SECTION -->
-                <section class="cabin-ctrl-section-container" id="cabin-pa-section">
-                    <div class="cabin-ctrl-category-title-container">
-                        <h2 class="cabin-ctrl-category-title">Announcement</h2>
-                    </div>
-                    <div class="pa-selection-container">
-                        <div class="pa-selection-dropdown-container">
-                            <label for="pa-lib" class="visually-hidden">Select PA Track</label>
-                            <span class="description-ico">🗣️</span>
-                            <select name="pa-lib" id="pa-lib" class="pa-selection-dropdown">
-                                <optgroup label="Hospitality">
-                                    <option value="default" selected>select a track to play</option>
-                                    <option value="arrival">We will be arriving shortly</option>
-                                    <option value="breakfast">Breakfast is now being served</option>
-                                    <option value="weather">The weather at our destination is sunny and warm
-                                    </option>
-                                    <option value="welcome">Welcome aboard and thank you for choosing us</option>
-                                </optgroup>
-                                <optgroup label="Safety">
-                                    <option value="evacuation">Emergency evacuation procedure</option>
-                                    <option value="seatbelt">Please fasten your seatbelt</option>
-                                    <option value="secure-items">Please stow your loose items securely</option>
-                                    <option value="smoke">Smoking is strictly prohibited</option>
-                                </optgroup>
-                                <optgroup label="Service Updates">
-                                    <option value="cleaning">Sanitization is underway for your safety</option>
-                                    <option value="crew">Your cabin crew is here to assist you</option>
-                                    <option value="delay">We apologize for the delay</option>
-                                    <option value="wifi">Wi-Fi is now available</option>
-                                </optgroup>
-                            </select>
+                <section class="cabin-section hidden" data-section="pa">
+                    <div class="cabin-ctrl-section-container">
+                        <div class="cabin-ctrl-category-title-container">
+                            <h2 class="cabin-ctrl-category-title">Announcement</h2>
+                        </div>
+                        <div class="pa-selection-container">
+                            <div class="pa-selection-dropdown-container">
+                                <label for="pa-lib" class="visually-hidden">Select PA Track</label>
+                                <span class="description-ico">🗣️</span>
+                                <select name="pa-lib" id="pa-lib" class="pa-selection-dropdown">
+                                    <optgroup label="Hospitality">
+                                        <option value="default" selected>select a track to play</option>
+                                        <option value="arrival">We will be arriving shortly</option>
+                                        <option value="breakfast">Breakfast is now being served</option>
+                                        <option value="weather">The weather at our destination is sunny and warm
+                                        </option>
+                                        <option value="welcome">Welcome aboard and thank you for choosing us</option>
+                                    </optgroup>
+                                    <optgroup label="Safety">
+                                        <option value="evacuation">Emergency evacuation procedure</option>
+                                        <option value="seatbelt">Please fasten your seatbelt</option>
+                                        <option value="secure-items">Please stow your loose items securely</option>
+                                        <option value="smoke">Smoking is strictly prohibited</option>
+                                    </optgroup>
+                                    <optgroup label="Service Updates">
+                                        <option value="cleaning">Sanitization is underway for your safety</option>
+                                        <option value="crew">Your cabin crew is here to assist you</option>
+                                        <option value="delay">We apologize for the delay</option>
+                                        <option value="wifi">Wi-Fi is now available</option>
+                                    </optgroup>
+                                </select>
 
-                        </div>
-                        <div class="pa-search-container">
-                            <label for="pa-search" class="visually-hidden">Search</label>
-                            <span class="description-ico">🔍</span>
-                            <input type="search" name="pa-search" id="pa-search" class="pa-search-bar">
+                            </div>
+                            <div class="pa-search-container">
+                                <label for="pa-search" class="visually-hidden">Search</label>
+                                <span class="description-ico">🔍</span>
+                                <input type="search" name="pa-search" id="pa-search" class="pa-search-bar">
 
+                            </div>
                         </div>
-                    </div>
-                    <div class="pa-current-container">
-                        <h3 class="pa-current-track-title">No track selected</h3>
-                        <div class="pa-current-script-container">
-                            <p class="pa-current-script"></p>
+                        <div class="pa-current-container">
+                            <h3 class="pa-current-track-title">No track selected</h3>
+                            <div class="pa-current-script-container">
+                                <p class="pa-current-script"></p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="pa-audio-ctrl-bar">
-                        <button type="button" class="pa-audio-ctrl-btn" id="pa-audio-play"
-                            aria-label="Play Announcement">
-                            <img src="img/cabin_page/audio_play_button.png" alt="Play">
-                        </button>
-                        <button type="button" class="pa-audio-ctrl-btn" id="pa-audio-pause"
-                            aria-label="Pause Announcement">
-                            <img src="img/cabin_page/audio_pause_button.png" alt="Pause">
-                        </button>
-                        <button type="button" class="pa-audio-ctrl-btn" id="pa-audio-stop"
-                            aria-label="Stop Announcement">
-                            <img src="img/cabin_page/audio_stop_button.png" alt="Stop">
-                        </button>
+                        <div class="pa-audio-ctrl-bar">
+                            <button type="button" class="pa-audio-ctrl-btn" id="pa-audio-play"
+                                aria-label="Play Announcement">
+                                <img src="img/cabin_page/audio_play_button.png" alt="Play">
+                            </button>
+                            <button type="button" class="pa-audio-ctrl-btn" id="pa-audio-pause"
+                                aria-label="Pause Announcement">
+                                <img src="img/cabin_page/audio_pause_button.png" alt="Pause">
+                            </button>
+                            <button type="button" class="pa-audio-ctrl-btn" id="pa-audio-stop"
+                                aria-label="Stop Announcement">
+                                <img src="img/cabin_page/audio_stop_button.png" alt="Stop">
+                            </button>
+                        </div>
                     </div>
                 </section>
                 <!-- AC SECTION -->
-                <section class="cabin-ctrl-section-container" id="cabin-ac-section">
-                    <div class="cabin-ctrl-category-title-container">
-                        <h2 class="cabin-ctrl-category-title">Air Conditioning</h2>
-                    </div>
-                    <div class="ac-ctrl-container">
-                        <!-- Front Zone -->
-                        <div class="ac-ctrl-area-container ac-ctrl-area-container-front">
-                            <h3 class="ac-ctrl-area-label">Front</h3>
-                            <div class="ac-function-container">
-                                <div class="ac-fanspeed-container">
-                                    <h4 class="ac-ctrl-label">Fan</h4>
-                                    <div class="ac-fan-btn-container">
-                                        <button type="button" class="ac-fanspeed-btn" id="fan-front-auto">auto</button>
-                                        <button type="button" class="ac-fanspeed-btn" id="fan-front-1">1</button>
-                                        <button type="button" class="ac-fanspeed-btn" id="fan-front-2">2</button>
-                                        <button type="button" class="ac-fanspeed-btn" id="fan-front-3">3</button>
-                                        <button type="button" class="ac-fanspeed-btn" id="fan-front-max">max</button>
+                <section class="cabin-section hidden" data-section="ac">
+                    <div class="cabin-ctrl-section-container">
+                        <div class="cabin-ctrl-category-title-container">
+                            <h2 class="cabin-ctrl-category-title">Air Conditioning</h2>
+                        </div>
+                        <div class="ac-ctrl-container">
+                            <!-- Front Zone -->
+                            <div class="ac-ctrl-area-container ac-ctrl-area-container-front">
+                                <h3 class="ac-ctrl-area-label">Front</h3>
+                                <div class="ac-function-container">
+                                    <div class="ac-fanspeed-container">
+                                        <h4 class="ac-ctrl-label">Fan</h4>
+                                        <div class="ac-fan-btn-container">
+                                            <button type="button" class="ac-fanspeed-btn"
+                                                id="fan-front-auto">auto</button>
+                                            <button type="button" class="ac-fanspeed-btn" id="fan-front-1">1</button>
+                                            <button type="button" class="ac-fanspeed-btn" id="fan-front-2">2</button>
+                                            <button type="button" class="ac-fanspeed-btn" id="fan-front-3">3</button>
+                                            <button type="button" class="ac-fanspeed-btn"
+                                                id="fan-front-max">max</button>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="ac-temp-container">
-                                    <h4 class="ac-ctrl-label">Temp</h4>
-                                    <div class="ac-temp-value-container"><span class="ac-temp-value">23</span></div>
-                                    <div class="ac-temp-btn-container">
-                                        <button type="button" class="ac-arrow-btn">
-                                            <img src="img/cabin_page/up-arrow.png" alt="up arrow icon">
-                                        </button>
-                                        <button type="button" class="ac-arrow-btn">
-                                            <img src="img/cabin_page/down-arrow.png" alt="down arrow icon">
-                                        </button>
+                                    <div class="ac-temp-container">
+                                        <h4 class="ac-ctrl-label">Temp</h4>
+                                        <div class="ac-temp-value-container"><span class="ac-temp-value">23</span></div>
+                                        <div class="ac-temp-btn-container">
+                                            <button type="button" class="ac-arrow-btn">
+                                                <img src="img/cabin_page/up-arrow.png" alt="up arrow icon">
+                                            </button>
+                                            <button type="button" class="ac-arrow-btn">
+                                                <img src="img/cabin_page/down-arrow.png" alt="down arrow icon">
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Middle Zone -->
-                        <div class="ac-ctrl-area-container ac-ctrl-area-container-middle">
-                            <h3 class="ac-ctrl-area-label">Middle</h3>
-                            <div class="ac-function-container">
-                                <div class="ac-fanspeed-container">
-                                    <h4 class="ac-ctrl-label">Fan</h4>
-                                    <div class="ac-fan-btn-container">
-                                        <button type="button" class="ac-fanspeed-btn" id="fan-middle-auto">auto</button>
-                                        <button type="button" class="ac-fanspeed-btn" id="fan-middle-1">1</button>
-                                        <button type="button" class="ac-fanspeed-btn" id="fan-middle-2">2</button>
-                                        <button type="button" class="ac-fanspeed-btn" id="fan-middle-3">3</button>
-                                        <button type="button" class="ac-fanspeed-btn" id="fan-middle-max">max</button>
+                            <!-- Middle Zone -->
+                            <div class="ac-ctrl-area-container ac-ctrl-area-container-middle">
+                                <h3 class="ac-ctrl-area-label">Middle</h3>
+                                <div class="ac-function-container">
+                                    <div class="ac-fanspeed-container">
+                                        <h4 class="ac-ctrl-label">Fan</h4>
+                                        <div class="ac-fan-btn-container">
+                                            <button type="button" class="ac-fanspeed-btn"
+                                                id="fan-middle-auto">auto</button>
+                                            <button type="button" class="ac-fanspeed-btn" id="fan-middle-1">1</button>
+                                            <button type="button" class="ac-fanspeed-btn" id="fan-middle-2">2</button>
+                                            <button type="button" class="ac-fanspeed-btn" id="fan-middle-3">3</button>
+                                            <button type="button" class="ac-fanspeed-btn"
+                                                id="fan-middle-max">max</button>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="ac-temp-container">
-                                    <h4 class="ac-ctrl-label">Temp</h4>
-                                    <div class="ac-temp-value-container"><span class="ac-temp-value">23</span></div>
-                                    <div class="ac-temp-btn-container">
-                                        <button type="button" class="ac-arrow-btn">
-                                            <img src="img/cabin_page/up-arrow.png" alt="up arrow icon">
-                                        </button>
-                                        <button type="button" class="ac-arrow-btn">
-                                            <img src="img/cabin_page/down-arrow.png" alt="down arrow icon">
-                                        </button>
+                                    <div class="ac-temp-container">
+                                        <h4 class="ac-ctrl-label">Temp</h4>
+                                        <div class="ac-temp-value-container"><span class="ac-temp-value">23</span></div>
+                                        <div class="ac-temp-btn-container">
+                                            <button type="button" class="ac-arrow-btn">
+                                                <img src="img/cabin_page/up-arrow.png" alt="up arrow icon">
+                                            </button>
+                                            <button type="button" class="ac-arrow-btn">
+                                                <img src="img/cabin_page/down-arrow.png" alt="down arrow icon">
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- Aft Zone -->
-                        <div class="ac-ctrl-area-container ac-ctrl-area-container-aft">
-                            <h3 class="ac-ctrl-area-label">Aft</h3>
-                            <div class="ac-function-container">
-                                <div class="ac-fanspeed-container">
-                                    <h4 class="ac-ctrl-label">Fan</h4>
-                                    <div class="ac-fan-btn-container">
-                                        <button type="button" class="ac-fanspeed-btn" id="fan-aft-auto">auto</button>
-                                        <button type="button" class="ac-fanspeed-btn" id="fan-aft-1">1</button>
-                                        <button type="button" class="ac-fanspeed-btn" id="fan-aft-2">2</button>
-                                        <button type="button" class="ac-fanspeed-btn" id="fan-aft-3">3</button>
-                                        <button type="button" class="ac-fanspeed-btn" id="fan-aft-max">max</button>
+                            <!-- Aft Zone -->
+                            <div class="ac-ctrl-area-container ac-ctrl-area-container-aft">
+                                <h3 class="ac-ctrl-area-label">Aft</h3>
+                                <div class="ac-function-container">
+                                    <div class="ac-fanspeed-container">
+                                        <h4 class="ac-ctrl-label">Fan</h4>
+                                        <div class="ac-fan-btn-container">
+                                            <button type="button" class="ac-fanspeed-btn"
+                                                id="fan-aft-auto">auto</button>
+                                            <button type="button" class="ac-fanspeed-btn" id="fan-aft-1">1</button>
+                                            <button type="button" class="ac-fanspeed-btn" id="fan-aft-2">2</button>
+                                            <button type="button" class="ac-fanspeed-btn" id="fan-aft-3">3</button>
+                                            <button type="button" class="ac-fanspeed-btn" id="fan-aft-max">max</button>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="ac-temp-container">
-                                    <h4 class="ac-ctrl-label">Temp</h4>
-                                    <div class="ac-temp-value-container"><span class="ac-temp-value">23</span></div>
-                                    <div class="ac-temp-btn-container">
-                                        <button type="button" class="ac-arrow-btn">
-                                            <img src="img/cabin_page/up-arrow.png" alt="up arrow icon">
-                                        </button>
-                                        <button type="button" class="ac-arrow-btn">
-                                            <img src="img/cabin_page/down-arrow.png" alt="down arrow icon">
-                                        </button>
+                                    <div class="ac-temp-container">
+                                        <h4 class="ac-ctrl-label">Temp</h4>
+                                        <div class="ac-temp-value-container"><span class="ac-temp-value">23</span></div>
+                                        <div class="ac-temp-btn-container">
+                                            <button type="button" class="ac-arrow-btn">
+                                                <img src="img/cabin_page/up-arrow.png" alt="up arrow icon">
+                                            </button>
+                                            <button type="button" class="ac-arrow-btn">
+                                                <img src="img/cabin_page/down-arrow.png" alt="down arrow icon">
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -274,400 +283,411 @@
                     </div>
                 </section>
                 <!-- LIGHT SECTION -->
-                <section class="cabin-ctrl-section-container" id="cabin-light-section">
-                    <div class="cabin-ctrl-category-title-container">
-                        <h2 class="cabin-ctrl-category-title">Lighting</h2>
-                    </div>
-                    <!-- light class selection -->
-                    <div class="section-bar">
-                        <div class="input-label-group">
-                            <input type="radio" id="light-c" name="light-class">
-                            <label for="light-c">Business</label>
+                <section class="cabin-section hidden" data-section="light">
+                    <div class="cabin-ctrl-section-container">
+                        <div class="cabin-ctrl-category-title-container">
+                            <h2 class="cabin-ctrl-category-title">Lighting</h2>
                         </div>
-                        <div class="input-label-group">
-                            <input type="radio" id="light-y" name="light-class">
-                            <label for="light-y">Economy</label>
-                        </div>
-                    </div>
-
-                    <!-- c class light control -->
-                    <div class="cabin-light-class-container" id="cabin-light-class-container-c">
-                        <div class="sub-section-bar" id="cabin-light-ctrl-mode-select-container-c">
+                        <!-- light class selection -->
+                        <div class="section-bar">
                             <div class="input-label-group">
-                                <input type="radio" id="light-auto-c" name="light-ctrl-mode">
-                                <label for="light-auto-c">Auto</label>
+                                <input type="radio" id="light-c" name="light-class">
+                                <label for="light-c">Business</label>
                             </div>
                             <div class="input-label-group">
-                                <input type="radio" id="light-manual-c" name="light-ctrl-mode">
-                                <label for="light-manual-c">Manual</label>
+                                <input type="radio" id="light-y" name="light-class">
+                                <label for="light-y">Economy</label>
                             </div>
                         </div>
 
-                        <div class="cabin-light-auto-container" id="cabin-light-auto-container-c">
-                            <div class="input-label-group">
-                                <input type="radio" id="light-auto-relax-c" name="light-auto">
-                                <label for="light-auto-relax-c">Relaxing</label>
+                        <!-- c class light control -->
+                        <div class="cabin-light-class-container" id="cabin-light-class-container-c">
+                            <div class="sub-section-bar" id="cabin-light-ctrl-mode-select-container-c">
+                                <div class="input-label-group">
+                                    <input type="radio" id="light-auto-c" name="light-ctrl-mode">
+                                    <label for="light-auto-c">Auto</label>
+                                </div>
+                                <div class="input-label-group">
+                                    <input type="radio" id="light-manual-c" name="light-ctrl-mode">
+                                    <label for="light-manual-c">Manual</label>
+                                </div>
                             </div>
-                            <div class="input-label-group">
-                                <input type="radio" id="light-auto-arrive-c" name="light-auto">
-                                <label for="light-auto-arrive-c">Arrival</label>
-                            </div>
-                            <div class="input-label-group">
-                                <input type="radio" id="light-auto-sleep-c" name="light-auto">
-                                <label for="light-auto-sleep-c">Sleep</label>
-                            </div>
-                            <div class="input-label-group">
-                                <input type="radio" id="light-auto-wake-c" name="light-auto">
-                                <label for="light-auto-wake-c">Wake-Up</label>
-                            </div>
-                            <div class="input-label-group">
-                                <input type="radio" id="light-auto-bright-c" name="light-auto">
-                                <label for="light-auto-bright-c">Bright</label>
-                            </div>
-                        </div>
 
-                        <div class="cabin-light-manual-container" id="cabin-light-manual-container-c">
-                            <div class="slide-ctrl-container" id="cabin-light-color-temp-container-c">
-                                <div class="light-manual-label-group">
-                                    <label for="color-temp-c">Colour Temp</label>
-                                    <button class="slider-reset-btn" type="reset" id="reset-color-temp-c">Reset</button>
+                            <div class="cabin-light-auto-container" id="cabin-light-auto-container-c">
+                                <div class="input-label-group">
+                                    <input type="radio" id="light-auto-relax-c" name="light-auto">
+                                    <label for="light-auto-relax-c">Relaxing</label>
                                 </div>
-                                <input class="slider" type="range" name="color-temp" id="color-temp-c" min="2500"
-                                    max="6500" step="100">
-                                <div class="slider-label-container">
-                                    <span class="slider-label color-temp-label">🔥</span>
-                                    <span class="slider-label color-temp-label">❄️</span>
+                                <div class="input-label-group">
+                                    <input type="radio" id="light-auto-arrive-c" name="light-auto">
+                                    <label for="light-auto-arrive-c">Arrival</label>
                                 </div>
-                            </div>
-                            <div class="slide-ctrl-container" id="cabin-light-bright-container-c">
-                                <div class="light-manual-label-group">
-                                    <label for="bright-c">Brightness</label>
-                                    <button class="slider-reset-btn" type="reset" id="reset-bright-c">Reset</button>
+                                <div class="input-label-group">
+                                    <input type="radio" id="light-auto-sleep-c" name="light-auto">
+                                    <label for="light-auto-sleep-c">Sleep</label>
                                 </div>
-                                <input class="slider" type="range" name="bright" id="bright-c" min="2500" max="6500"
-                                    step="100">
-                                <div class="slider-label-container">
-                                    <span class="slider-label bright-label">🌕</span>
-                                    <span class="slider-label bright-label">🌑</span>
+                                <div class="input-label-group">
+                                    <input type="radio" id="light-auto-wake-c" name="light-auto">
+                                    <label for="light-auto-wake-c">Wake-Up</label>
+                                </div>
+                                <div class="input-label-group">
+                                    <input type="radio" id="light-auto-bright-c" name="light-auto">
+                                    <label for="light-auto-bright-c">Bright</label>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- y class light control -->
-                    <div class="cabin-light-class-container" id="cabin-light-class-container-y">
-                        <div class="sub-section-bar" id="cabin-light-ctrl-mode-select-container-y">
-                            <div class="input-label-group">
-                                <input type="radio" id="light-auto-y" name="light-ctrl-mode">
-                                <label for="light-auto-y">Auto</label>
-                            </div>
-                            <div class="input-label-group">
-                                <input type="radio" id="light-manual-y" name="light-ctrl-mode">
-                                <label for="light-manual-y">Manual</label>
-                            </div>
-                        </div>
 
-                        <div class="cabin-light-auto-container" id="cabin-light-auto-container-y">
-                            <div class="input-label-group">
-                                <input type="radio" id="light-auto-relax-y" name="light-auto">
-                                <label for="light-auto-relax-y">Relaxing</label>
-                            </div>
-                            <div class="input-label-group">
-                                <input type="radio" id="light-auto-arrive-y" name="light-auto">
-                                <label for="light-auto-arrive-y">Arrival</label>
-                            </div>
-                            <div class="input-label-group">
-                                <input type="radio" id="light-auto-sleep-y" name="light-auto">
-                                <label for="light-auto-sleep-y">Sleep</label>
-                            </div>
-                            <div class="input-label-group">
-                                <input type="radio" id="light-auto-wake-y" name="light-auto">
-                                <label for="light-auto-wake-y">Wake-Up</label>
-                            </div>
-                            <div class="input-label-group">
-                                <input type="radio" id="light-auto-bright-y" name="light-auto">
-                                <label for="light-auto-bright-y">Bright</label>
+                            <div class="cabin-light-manual-container" id="cabin-light-manual-container-c">
+                                <div class="slide-ctrl-container" id="cabin-light-color-temp-container-c">
+                                    <div class="light-manual-label-group">
+                                        <label for="color-temp-c">Colour Temp</label>
+                                        <button class="slider-reset-btn" type="reset"
+                                            id="reset-color-temp-c">Reset</button>
+                                    </div>
+                                    <input class="slider" type="range" name="color-temp" id="color-temp-c" min="2500"
+                                        max="6500" step="100">
+                                    <div class="slider-label-container">
+                                        <span class="slider-label color-temp-label">🔥</span>
+                                        <span class="slider-label color-temp-label">❄️</span>
+                                    </div>
+                                </div>
+                                <div class="slide-ctrl-container" id="cabin-light-bright-container-c">
+                                    <div class="light-manual-label-group">
+                                        <label for="bright-c">Brightness</label>
+                                        <button class="slider-reset-btn" type="reset" id="reset-bright-c">Reset</button>
+                                    </div>
+                                    <input class="slider" type="range" name="bright" id="bright-c" min="2500" max="6500"
+                                        step="100">
+                                    <div class="slider-label-container">
+                                        <span class="slider-label bright-label">🌕</span>
+                                        <span class="slider-label bright-label">🌑</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="cabin-light-manual-container" id="cabin-light-manual-container-y">
-                            <div class="slide-ctrl-container" id="cabin-light-color-temp-container-y">
-                                <div class="light-manual-label-group">
-                                    <label for="color-temp-y">Colour Temp</label>
-                                    <button class="slider-reset-btn" type="reset" id="reset-color-temp-y">Reset</button>
+                        <!-- y class light control -->
+                        <div class="cabin-light-class-container" id="cabin-light-class-container-y">
+                            <div class="sub-section-bar" id="cabin-light-ctrl-mode-select-container-y">
+                                <div class="input-label-group">
+                                    <input type="radio" id="light-auto-y" name="light-ctrl-mode">
+                                    <label for="light-auto-y">Auto</label>
                                 </div>
-                                <input class="slider" type="range" name="color-temp" id="color-temp-y" min="2500"
-                                    max="6500" step="100">
-                                <div class="slider-label-container">
-                                    <span class="slider-label color-temp-label">🔥</span>
-                                    <span class="slider-label color-temp-label">❄️</span>
+                                <div class="input-label-group">
+                                    <input type="radio" id="light-manual-y" name="light-ctrl-mode">
+                                    <label for="light-manual-y">Manual</label>
                                 </div>
                             </div>
-                            <div class="slide-ctrl-container" id="cabin-light-bright-container-y">
-                                <div class="light-manual-label-group">
-                                    <label for="bright-y">Brightness</label>
-                                    <button class="slider-reset-btn" type="reset" id="reset-bright-y">Reset</button>
+
+                            <div class="cabin-light-auto-container" id="cabin-light-auto-container-y">
+                                <div class="input-label-group">
+                                    <input type="radio" id="light-auto-relax-y" name="light-auto">
+                                    <label for="light-auto-relax-y">Relaxing</label>
                                 </div>
-                                <input class="slider" type="range" name="bright" id="bright-y" min="2500" max="6500"
-                                    step="100">
-                                <div class="slider-label-container">
-                                    <span class="slider-label bright-label">🌕</span>
-                                    <span class="slider-label bright-label">🌑</span>
+                                <div class="input-label-group">
+                                    <input type="radio" id="light-auto-arrive-y" name="light-auto">
+                                    <label for="light-auto-arrive-y">Arrival</label>
+                                </div>
+                                <div class="input-label-group">
+                                    <input type="radio" id="light-auto-sleep-y" name="light-auto">
+                                    <label for="light-auto-sleep-y">Sleep</label>
+                                </div>
+                                <div class="input-label-group">
+                                    <input type="radio" id="light-auto-wake-y" name="light-auto">
+                                    <label for="light-auto-wake-y">Wake-Up</label>
+                                </div>
+                                <div class="input-label-group">
+                                    <input type="radio" id="light-auto-bright-y" name="light-auto">
+                                    <label for="light-auto-bright-y">Bright</label>
+                                </div>
+                            </div>
+
+                            <div class="cabin-light-manual-container" id="cabin-light-manual-container-y">
+                                <div class="slide-ctrl-container" id="cabin-light-color-temp-container-y">
+                                    <div class="light-manual-label-group">
+                                        <label for="color-temp-y">Colour Temp</label>
+                                        <button class="slider-reset-btn" type="reset"
+                                            id="reset-color-temp-y">Reset</button>
+                                    </div>
+                                    <input class="slider" type="range" name="color-temp" id="color-temp-y" min="2500"
+                                        max="6500" step="100">
+                                    <div class="slider-label-container">
+                                        <span class="slider-label color-temp-label">🔥</span>
+                                        <span class="slider-label color-temp-label">❄️</span>
+                                    </div>
+                                </div>
+                                <div class="slide-ctrl-container" id="cabin-light-bright-container-y">
+                                    <div class="light-manual-label-group">
+                                        <label for="bright-y">Brightness</label>
+                                        <button class="slider-reset-btn" type="reset" id="reset-bright-y">Reset</button>
+                                    </div>
+                                    <input class="slider" type="range" name="bright" id="bright-y" min="2500" max="6500"
+                                        step="100">
+                                    <div class="slider-label-container">
+                                        <span class="slider-label bright-label">🌕</span>
+                                        <span class="slider-label bright-label">🌑</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 <!-- MUSIC SECTION -->
-                <section class="cabin-ctrl-section-container" id="cabin-music-section">
-                    <div class="cabin-ctrl-category-title-container">
-                        <h2 class="cabin-ctrl-category-title">Music</h2>
-                    </div>
-                    <div class="cabin-music-container">
-                        <label for="cabin-music-select" class="visually-hidden">Select Music Track to Play</label>
-                        <span class="description-ico">🎹</span>
-                        <select name="cabin-music-select" id="cabin-music-select"
-                            class="cabin-music-selection-dropdown">
-                            <option value="default" selected>select a track to play</option>
-                            <option value="morning-glide">Morning Glide</option>
-                            <option value="skyline-serenade">Skyline Serenade</option>
-                            <option value="cloudbreaker">Cloudbreaker</option>
-                            <option value="altitude-dreams">Altitude Dreams</option>
-                            <option value="velvet-descent">Velvet Descent</option>
-                        </select>
-                    </div>
-                    <div class="cabin-music-current-container">
-                        <h3 class="cabin-music-current-track-title">No track selected</h3>
-                    </div>
-                    <div class="cabin-audio-ctrl-bar">
-                        <button type="button" class="cabin-audio-ctrl-btn" id="cabin-music-play"
-                            aria-label="Play Music">
-                            <img src="img/cabin_page/audio_play_button.png" alt="Play">
-                        </button>
-                        <button type="button" class="cabin-audio-ctrl-btn" id="cabin-music-pause"
-                            aria-label="Pause Music">
-                            <img src="img/cabin_page/audio_pause_button.png" alt="Pause">
-                        </button>
-                        <button type="button" class="cabin-audio-ctrl-btn" id="cabin-music-stop"
-                            aria-label="Stop Music">
-                            <img src="img/cabin_page/audio_stop_button.png" alt="Stop">
-                        </button>
+                <section class="cabin-section hidden" data-section="music">
+                    <div class="cabin-ctrl-section-container">
+                        <div class="cabin-ctrl-category-title-container">
+                            <h2 class="cabin-ctrl-category-title">Music</h2>
+                        </div>
+                        <div class="cabin-music-container">
+                            <label for="cabin-music-select" class="visually-hidden">Select Music Track to Play</label>
+                            <span class="description-ico">🎹</span>
+                            <select name="cabin-music-select" id="cabin-music-select"
+                                class="cabin-music-selection-dropdown">
+                                <option value="default" selected>select a track to play</option>
+                                <option value="morning-glide">Morning Glide</option>
+                                <option value="skyline-serenade">Skyline Serenade</option>
+                                <option value="cloudbreaker">Cloudbreaker</option>
+                                <option value="altitude-dreams">Altitude Dreams</option>
+                                <option value="velvet-descent">Velvet Descent</option>
+                            </select>
+                        </div>
+                        <div class="cabin-music-current-container">
+                            <h3 class="cabin-music-current-track-title">No track selected</h3>
+                        </div>
+                        <div class="cabin-audio-ctrl-bar">
+                            <button type="button" class="cabin-audio-ctrl-btn" id="cabin-music-play"
+                                aria-label="Play Music">
+                                <img src="img/cabin_page/audio_play_button.png" alt="Play">
+                            </button>
+                            <button type="button" class="cabin-audio-ctrl-btn" id="cabin-music-pause"
+                                aria-label="Pause Music">
+                                <img src="img/cabin_page/audio_pause_button.png" alt="Pause">
+                            </button>
+                            <button type="button" class="cabin-audio-ctrl-btn" id="cabin-music-stop"
+                                aria-label="Stop Music">
+                                <img src="img/cabin_page/audio_stop_button.png" alt="Stop">
+                            </button>
+                        </div>
                     </div>
                 </section>
                 <!-- IFE ENTERTAINMENT SECTION -->
-                <section class="cabin-ctrl-section-container" id="cabin-ife-section">
-                    <div class="cabin-ctrl-category-title-container">
-                        <h2 class="cabin-ctrl-category-title">In-flight Entertainment</h2>
-                    </div>
-                    <div class="cabin-ife-container">
-                        <label for="ife-status" class="ife-status-label">IFE Status</label>
-                        <div class="toggle-container">
-                            <img src="img/red_circle_google.png" alt="red circle" class="toggle-label">
-                            <input type="range" name="ife-status" id="ife-status" min="0" max="50" step="50">
-                            <img src="img/green_circle_google.png" alt="green circle" class="toggle-label">
+                <section class="cabin-section hidden" data-section="ife">
+                    <div class="cabin-ctrl-section-container">
+                        <div class="cabin-ctrl-category-title-container">
+                            <h2 class="cabin-ctrl-category-title">In-flight Entertainment</h2>
                         </div>
-                        <!-- select IFE global or Individual seat control -->
-                        <div class="section-bar">
-                            <div class="input-label-group">
-                                <input type="radio" id="ife-global" name="ife-mode">
-                                <label for="ife-global">Global</label>
+                        <div class="cabin-ife-container">
+                            <label for="ife-status" class="ife-status-label">IFE Status</label>
+                            <div class="toggle-container">
+                                <img src="img/red_circle_google.png" alt="red circle" class="toggle-label">
+                                <input type="range" name="ife-status" id="ife-status" min="0" max="50" step="50">
+                                <img src="img/green_circle_google.png" alt="green circle" class="toggle-label">
                             </div>
-                            <div class="input-label-group">
-                                <input type="radio" id="ife-individual" name="ife-mode">
-                                <label for="ife-individual">Individual</label>
-                            </div>
-                        </div>
-                        <!-- IFE Global Control -->
-                        <div class="ife-section-container" id="ife-global-section">
-                            <h3>Global Control</h3>
-                            <div class="ife-ctrl-item-container">
-                                <label for="ife-media-pack" class="ife-ctrl-item-label">Media Pack</label>
-                                <select name="media-pack" id="ife-media-pack" class="ife-media-pack-select">
-                                    <optgroup label="Short">
-                                        <option value="short-1">Short: Pack 1</option>
-                                        <option value="short-2">Short: Pack 2</option>
-                                        <option value="short-3">Short: Pack 3</option>
-                                    </optgroup>
-                                    <optgroup label="Medium">
-                                        <option value="medium-1">Medium: Pack 1</option>
-                                        <option value="medium-2">Medium: Pack 2</option>
-                                        <option value="medium-3">Medium: Pack 3</option>
-                                    </optgroup>
-                                    <optgroup label="Long">
-                                        <option value="long-1">Long: Pack 1</option>
-                                        <option value="long-2">Long: Pack 2</option>
-                                        <option value="long-3">Long: Pack 3</option>
-                                    </optgroup>
-                                </select>
-                                <button type="button" class="ife-media-pack-apply-btn">Apply</button>
-                            </div>
-                            <div class="ife-ctrl-item-container">
-                                <label for="ife-global-parental-ctrl" class="ife-ctrl-item-label">Parental
-                                    Control</label>
-                                <div class="toggle-container">
-                                    <img src="img/red_circle_google.png" alt="red circle" class="toggle-label">
-                                    <input type="range" name="ife-status" id="ife-global-parental-ctrl" min="0" max="50"
-                                        step="50">
-                                    <img src="img/green_circle_google.png" alt="green circle" class="toggle-label">
+                            <!-- select IFE global or Individual seat control -->
+                            <div class="section-bar">
+                                <div class="input-label-group">
+                                    <input type="radio" id="ife-global" name="ife-mode">
+                                    <label for="ife-global">Global</label>
+                                </div>
+                                <div class="input-label-group">
+                                    <input type="radio" id="ife-individual" name="ife-mode">
+                                    <label for="ife-individual">Individual</label>
                                 </div>
                             </div>
-                            <!-- IFE Individual Control -->
-                        </div>
-                        <div class="ife-section-container" id="ife-individual-section">
-                            <h3>Individual Control</h3>
-                            <div class="ife-ctrl-item-container">
-                                <ul class="ife-individual-ctrl-instruction">
-                                    <li>use a comma to separate each seat (e.g. 43K, 49B)</li>
-                                    <li>to select a whole row, enter the row number only</li>
-                                    <li>to select a range, use a hyphen (e.g. 10A-13H) </li>
-                                </ul>
-                                <label for="ife-seat" class="ife-ctrl-item-label">Seat</label>
-                                <div class="ife-seat-input-container">
-                                    <input type="text" id="ife-seat" placeholder="enter seat number"
-                                        class="ife-seat-input">
-                                    <button type="button" class="ife-clear-seat-btn">clear</button>
+                            <!-- IFE Global Control -->
+                            <div class="ife-section-container" id="ife-global-section">
+                                <h3>Global Control</h3>
+                                <div class="ife-ctrl-item-container">
+                                    <label for="ife-media-pack" class="ife-ctrl-item-label">Media Pack</label>
+                                    <select name="media-pack" id="ife-media-pack" class="ife-media-pack-select">
+                                        <optgroup label="Short">
+                                            <option value="short-1">Short: Pack 1</option>
+                                            <option value="short-2">Short: Pack 2</option>
+                                            <option value="short-3">Short: Pack 3</option>
+                                        </optgroup>
+                                        <optgroup label="Medium">
+                                            <option value="medium-1">Medium: Pack 1</option>
+                                            <option value="medium-2">Medium: Pack 2</option>
+                                            <option value="medium-3">Medium: Pack 3</option>
+                                        </optgroup>
+                                        <optgroup label="Long">
+                                            <option value="long-1">Long: Pack 1</option>
+                                            <option value="long-2">Long: Pack 2</option>
+                                            <option value="long-3">Long: Pack 3</option>
+                                        </optgroup>
+                                    </select>
+                                    <button type="button" class="ife-media-pack-apply-btn">Apply</button>
                                 </div>
+                                <div class="ife-ctrl-item-container">
+                                    <label for="ife-global-parental-ctrl" class="ife-ctrl-item-label">Parental
+                                        Control</label>
+                                    <div class="toggle-container">
+                                        <img src="img/red_circle_google.png" alt="red circle" class="toggle-label">
+                                        <input type="range" name="ife-status" id="ife-global-parental-ctrl" min="0"
+                                            max="50" step="50">
+                                        <img src="img/green_circle_google.png" alt="green circle" class="toggle-label">
+                                    </div>
+                                </div>
+                                <!-- IFE Individual Control -->
+                            </div>
+                            <div class="ife-section-container" id="ife-individual-section">
+                                <h3>Individual Control</h3>
+                                <div class="ife-ctrl-item-container">
+                                    <ul class="ife-individual-ctrl-instruction">
+                                        <li>use a comma to separate each seat (e.g. 43K, 49B)</li>
+                                        <li>to select a whole row, enter the row number only</li>
+                                        <li>to select a range, use a hyphen (e.g. 10A-13H) </li>
+                                    </ul>
+                                    <label for="ife-seat" class="ife-ctrl-item-label">Seat</label>
+                                    <div class="ife-seat-input-container">
+                                        <input type="text" id="ife-seat" placeholder="enter seat number"
+                                            class="ife-seat-input">
+                                        <button type="button" class="ife-clear-seat-btn">clear</button>
+                                    </div>
+
+                                </div>
+
+
 
                             </div>
 
-
-
                         </div>
-
                     </div>
                 </section>
                 <!-- SHADE SECTION -->
-                <section class="cabin-ctrl-section-container" id="cabin-shade-section">
-                    <div class="cabin-ctrl-category-title-container">
-                        <h2 class="cabin-ctrl-category-title">Shade</h2>
-                    </div>
-                    <!-- Shade Control Class selection -->
-                    <div class="section-bar">
-                        <div class="input-label-group">
-                            <input type="radio" id="shade-c" name="shade-class">
-                            <label for="shade-c">Business</label>
+                <section class="cabin-section hidden" data-section="shade">
+                    <div class="cabin-ctrl-section-container">
+                        <div class="cabin-ctrl-category-title-container">
+                            <h2 class="cabin-ctrl-category-title">Shade</h2>
                         </div>
-                        <div class="input-label-group">
-                            <input type="radio" id="shade-y" name="shade-class">
-                            <label for="shade-y">Economy</label>
-                        </div>
-                    </div>
-                    <!-- Business Class Shade Control -->
-                    <div class="cabin-shade-class-container" id="cabin-shade-class-container-c">
-                        <div class="sub-section-bar" id="cabin-shade-ctrl-mode-select-container-c">
+                        <!-- Shade Control Class selection -->
+                        <div class="section-bar">
                             <div class="input-label-group">
-                                <input type="radio" id="shade-auto-c" name="shade-ctrl-mode">
-                                <label for="shade-auto-c">Auto</label>
+                                <input type="radio" id="shade-c" name="shade-class">
+                                <label for="shade-c">Business</label>
                             </div>
                             <div class="input-label-group">
-                                <input type="radio" id="shade-manual-c" name="shade-ctrl-mode">
-                                <label for="shade-manual-c">Manual</label>
+                                <input type="radio" id="shade-y" name="shade-class">
+                                <label for="shade-y">Economy</label>
                             </div>
                         </div>
-
-                        <div class="cabin-shade-auto-container" id="cabin-shade-auto-container-c">
-                            <div class="input-label-group">
-                                <input type="radio" id="shade-auto-sunrise-c" name="shade-auto">
-                                <label for="shade-auto-sunrise-c">Sunrise</label>
-                            </div>
-                            <div class="input-label-group">
-                                <input type="radio" id="shade-auto-night-c" name="shade-auto">
-                                <label for="shade-auto-night-c">Night Mode</label>
-                            </div>
-                            <div class="input-label-group">
-                                <input type="radio" id="shade-auto-landing-c" name="shade-auto">
-                                <label for="shade-auto-landing-c">Landing Prep</label>
-                            </div>
-                        </div>
-
-                        <div class="cabin-shade-manual-container" id="cabin-shade-manual-container-c">
-                            <div class="slide-ctrl-container" id="cabin-shade-level-container-c">
-                                <div class="shade-manual-label-group">
-                                    <label for="shade-level-c">Shade Level</label>
-                                    <button class="slider-reset-btn" type="reset"
-                                        id="reset-shade-level-c">Reset</button>
+                        <!-- Business Class Shade Control -->
+                        <div class="cabin-shade-class-container" id="cabin-shade-class-container-c">
+                            <div class="sub-section-bar" id="cabin-shade-ctrl-mode-select-container-c">
+                                <div class="input-label-group">
+                                    <input type="radio" id="shade-auto-c" name="shade-ctrl-mode">
+                                    <label for="shade-auto-c">Auto</label>
                                 </div>
-                                <input class="slider" type="range" name="shade-level" id="shade-level-c" min="0"
-                                    max="100" step="10">
-                                <div class="slider-label-container">
-                                    <span class="slider-label shade-label">🌞</span>
-                                    <span class="slider-label shade-label">🌚</span>
+                                <div class="input-label-group">
+                                    <input type="radio" id="shade-manual-c" name="shade-ctrl-mode">
+                                    <label for="shade-manual-c">Manual</label>
                                 </div>
                             </div>
 
-                            <div class="slide-ctrl-container" id="cabin-tint-level-container-c">
-                                <div class="shade-manual-label-group">
-                                    <label for="tint-level-c">Window Tint</label>
-                                    <button class="slider-reset-btn" type="reset" id="reset-tint-level-c">Reset</button>
+                            <div class="cabin-shade-auto-container" id="cabin-shade-auto-container-c">
+                                <div class="input-label-group">
+                                    <input type="radio" id="shade-auto-sunrise-c" name="shade-auto">
+                                    <label for="shade-auto-sunrise-c">Sunrise</label>
                                 </div>
-                                <input class="slider" type="range" name="tint-level" id="tint-level-c" min="0" max="100"
-                                    step="10">
-                                <div class="slider-label-container">
-                                    <span class="slider-label tint-label">🔆</span>
-                                    <span class="slider-label tint-label">🌒</span>
+                                <div class="input-label-group">
+                                    <input type="radio" id="shade-auto-night-c" name="shade-auto">
+                                    <label for="shade-auto-night-c">Night Mode</label>
+                                </div>
+                                <div class="input-label-group">
+                                    <input type="radio" id="shade-auto-landing-c" name="shade-auto">
+                                    <label for="shade-auto-landing-c">Landing Prep</label>
+                                </div>
+                            </div>
+
+                            <div class="cabin-shade-manual-container" id="cabin-shade-manual-container-c">
+                                <div class="slide-ctrl-container" id="cabin-shade-level-container-c">
+                                    <div class="shade-manual-label-group">
+                                        <label for="shade-level-c">Shade Level</label>
+                                        <button class="slider-reset-btn" type="reset"
+                                            id="reset-shade-level-c">Reset</button>
+                                    </div>
+                                    <input class="slider" type="range" name="shade-level" id="shade-level-c" min="0"
+                                        max="100" step="10">
+                                    <div class="slider-label-container">
+                                        <span class="slider-label shade-label">🌞</span>
+                                        <span class="slider-label shade-label">🌚</span>
+                                    </div>
+                                </div>
+
+                                <div class="slide-ctrl-container" id="cabin-tint-level-container-c">
+                                    <div class="shade-manual-label-group">
+                                        <label for="tint-level-c">Window Tint</label>
+                                        <button class="slider-reset-btn" type="reset"
+                                            id="reset-tint-level-c">Reset</button>
+                                    </div>
+                                    <input class="slider" type="range" name="tint-level" id="tint-level-c" min="0"
+                                        max="100" step="10">
+                                    <div class="slider-label-container">
+                                        <span class="slider-label tint-label">🔆</span>
+                                        <span class="slider-label tint-label">🌒</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Economy Class Shade Control -->
-                    <div class="cabin-shade-class-container" id="cabin-shade-class-container-y">
-                        <div class="sub-section-bar" id="cabin-shade-ctrl-mode-select-container-y">
-                            <div class="input-label-group">
-                                <input type="radio" id="shade-auto-y" name="shade-ctrl-mode">
-                                <label for="shade-auto-y">Auto</label>
-                            </div>
-                            <div class="input-label-group">
-                                <input type="radio" id="shade-manual-y" name="shade-ctrl-mode">
-                                <label for="shade-manual-y">Manual</label>
-                            </div>
-                        </div>
-
-                        <div class="cabin-shade-auto-container" id="cabin-shade-auto-container-y">
-                            <div class="input-label-group">
-                                <input type="radio" id="shade-auto-sunrise-y" name="shade-auto">
-                                <label for="shade-auto-sunrise-y">Sunrise</label>
-                            </div>
-                            <div class="input-label-group">
-                                <input type="radio" id="shade-auto-night-y" name="shade-auto">
-                                <label for="shade-auto-night-y">Night Mode</label>
-                            </div>
-                            <div class="input-label-group">
-                                <input type="radio" id="shade-auto-landing-y" name="shade-auto">
-                                <label for="shade-auto-landing-y">Landing Prep</label>
-                            </div>
-                        </div>
-
-                        <div class="cabin-shade-manual-container" id="cabin-shade-manual-container-y">
-                            <div class="slide-ctrl-container" id="cabin-shade-level-container-y">
-                                <div class="shade-manual-label-group">
-                                    <label for="shade-level-y">Shade Level</label>
-                                    <button class="slider-reset-btn" type="reset"
-                                        id="reset-shade-level-y">Reset</button>
+                        <!-- Economy Class Shade Control -->
+                        <div class="cabin-shade-class-container" id="cabin-shade-class-container-y">
+                            <div class="sub-section-bar" id="cabin-shade-ctrl-mode-select-container-y">
+                                <div class="input-label-group">
+                                    <input type="radio" id="shade-auto-y" name="shade-ctrl-mode">
+                                    <label for="shade-auto-y">Auto</label>
                                 </div>
-                                <input class="slider" type="range" name="shade-level" id="shade-level-y" min="0"
-                                    max="100" step="10">
-                                <div class="slider-label-container">
-                                    <span class="slider-label shade-label">🌞</span>
-                                    <span class="slider-label shade-label">🌚</span>
+                                <div class="input-label-group">
+                                    <input type="radio" id="shade-manual-y" name="shade-ctrl-mode">
+                                    <label for="shade-manual-y">Manual</label>
                                 </div>
                             </div>
 
-                            <div class="slide-ctrl-container" id="cabin-tint-level-container-y">
-                                <div class="shade-manual-label-group">
-                                    <label for="tint-level-y">Window Tint</label>
-                                    <button class="slider-reset-btn" type="reset" id="reset-tint-level-y">Reset</button>
+                            <div class="cabin-shade-auto-container" id="cabin-shade-auto-container-y">
+                                <div class="input-label-group">
+                                    <input type="radio" id="shade-auto-sunrise-y" name="shade-auto">
+                                    <label for="shade-auto-sunrise-y">Sunrise</label>
                                 </div>
-                                <input class="slider" type="range" name="tint-level" id="tint-level-y" min="0" max="100"
-                                    step="10">
-                                <div class="slider-label-container">
-                                    <span class="slider-label tint-label">🔆</span>
-                                    <span class="slider-label tint-label">🌒</span>
+                                <div class="input-label-group">
+                                    <input type="radio" id="shade-auto-night-y" name="shade-auto">
+                                    <label for="shade-auto-night-y">Night Mode</label>
+                                </div>
+                                <div class="input-label-group">
+                                    <input type="radio" id="shade-auto-landing-y" name="shade-auto">
+                                    <label for="shade-auto-landing-y">Landing Prep</label>
+                                </div>
+                            </div>
+
+                            <div class="cabin-shade-manual-container" id="cabin-shade-manual-container-y">
+                                <div class="slide-ctrl-container" id="cabin-shade-level-container-y">
+                                    <div class="shade-manual-label-group">
+                                        <label for="shade-level-y">Shade Level</label>
+                                        <button class="slider-reset-btn" type="reset"
+                                            id="reset-shade-level-y">Reset</button>
+                                    </div>
+                                    <input class="slider" type="range" name="shade-level" id="shade-level-y" min="0"
+                                        max="100" step="10">
+                                    <div class="slider-label-container">
+                                        <span class="slider-label shade-label">🌞</span>
+                                        <span class="slider-label shade-label">🌚</span>
+                                    </div>
+                                </div>
+
+                                <div class="slide-ctrl-container" id="cabin-tint-level-container-y">
+                                    <div class="shade-manual-label-group">
+                                        <label for="tint-level-y">Window Tint</label>
+                                        <button class="slider-reset-btn" type="reset"
+                                            id="reset-tint-level-y">Reset</button>
+                                    </div>
+                                    <input class="slider" type="range" name="tint-level" id="tint-level-y" min="0"
+                                        max="100" step="10">
+                                    <div class="slider-label-container">
+                                        <span class="slider-label tint-label">🔆</span>
+                                        <span class="slider-label tint-label">🌒</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-
             </main>
         </div>
 
@@ -676,7 +696,8 @@
         </footer>
     </div>
 
-
+    <script src="js/app.js"></script>
+    <script src="js/cabin.js"></script>
 
 </body>
 
