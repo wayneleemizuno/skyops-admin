@@ -803,8 +803,12 @@ input[type="search"] {
 	cursor: pointer;
 }
 
-.cabin-menu-btn:hover,
-.cabin-menu-btn:active {
+.cabin-menu-btn:hover {
+	background-color: var(--color-primary);
+	color: var(--color-light-background);
+}
+
+.cabin-menu-btn-active {
 	background-color: var(--color-primary);
 	color: var(--color-light-background);
 }
@@ -856,7 +860,7 @@ input[type="search"] {
 	padding-left: 0.5rem;
 }
 
-.pa-current-container {
+.pa-info-container {
 	width: 100%;
 	max-height: 40rem;
 	max-width: 80rem;
@@ -867,18 +871,19 @@ input[type="search"] {
 	scrollbar-width: none;
 }
 
-.pa-current-track-title {
+.pa-title {
 	font-size: 2rem;
-	font-weight: 500;
+	font-weight: 600;
 	font-family: Montserrat;
-	text-transform: capitalize;
 	color: var(--color-neutral-constrast);
 	text-align: center;
+	margin-bottom: 0.5rem;
 }
 
-.pa-current-script {
+.pa-script {
 	font-size: 2rem;
 	color: var(--color-neutral-constrast);
+	text-align: justify;
 }
 
 .pa-audio-ctrl-bar {
