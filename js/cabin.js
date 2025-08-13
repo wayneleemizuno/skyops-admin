@@ -1,5 +1,4 @@
-/* Get all cabin menu buttons; this returns a NodeList of elements 
-   with the class "cabin-menu-btn" */
+/* CABIN MENU */
 const cabinMenuBtn = document.querySelectorAll(".cabin-menu-btn");
 
 /* The event listener automatically passes an event object to the function, which contains information about the click event and the element that was clicked. */
@@ -11,7 +10,13 @@ cabinMenuBtn.forEach((btn) => {
 function toggleSection(event) {
 	/* 'event.currentTarget' refers to the button that was actually clicked, ensuring we are handling the correct element even if event bubbling occurs. */
 	const clickedBtn = event.currentTarget;
-
+	cabinMenuBtn.forEach((btn) => {
+		if (btn === clickedBtn) {
+			btn.classList.add("cabin-menu-btn-active");
+		} else {
+			btn.classList.remove("cabin-menu-btn-active");
+		}
+	});
 	/* Access the custom data attribute 'data-section' of the clicked button. This lets us know which section the button corresponds to. */
 	const clickedBtnData = clickedBtn.dataset.section;
 
@@ -109,3 +114,102 @@ paLib.addEventListener("change", (event) => {
 		paScriptDisplay.textContent = track.script;
 	}
 });
+
+// AC SECTION
+//Fan Speed Adjustment
+const fanSpeedData = [
+	{ area: "frt", fan: "auto" },
+	{ area: "mid", fan: "2" },
+	{ area: "aft", fan: "max" },
+];
+
+const fanSpeedBtn = document.querySelectorAll(".ac-fanspeed-btn");
+/* fanSpeedBtn.forEach((btn) => {
+	btn.addEventListener("click", setFanSpeed);
+}); */
+
+const updateFanSpeed = () => {
+	fanSpeedBtn.forEach((btn) => {
+		let matchFound = false;
+		const btnArea = btn.dataset.area;
+		const btnFanSpeed = btn.dataset.fan;
+		for (let i = 0; i < fanSpeedData.length; i++) {
+			if (
+				btnArea === fanSpeedData[i].area &&
+				btnFanSpeed === fanSpeedData[i].fan
+			) {
+				matchFound = true;
+				break;
+			}
+		}
+		if (matchFound) {
+			btn.classList.add("ac-fanspeed-btn-active");
+		} else {
+			btn.classList.remove("ac-fanspeed-btn-active");
+		}
+	});
+};
+
+updateFanSpeed();
+
+/* function setFanSpeed(event) {
+	const clickedBtn = event.currentTarget;
+	const fanSpeedArea = clickedBtn.dataset.area;
+	const fanSpeed = clickedBtn.dataset.fan;
+	fanSpeedBtn.forEach((btn) => {
+		if ((btn.dataset.area === fanSpeedArea) & (btn.dataset.fan === fanSpeed)) {
+			btn.classList.add("ac-fanspeed-btn-active");
+		} else if(btn.dataset.){
+
+		}
+		
+		else {
+			btn.classList.remove("ac-fanspeed-btn-active");
+		}
+	});
+} */
+
+//Temperature Adjustment
+const acTemp = document.querySelectorAll(".ac-temp-value");
+const tempUpBtn = document.querySelectorAll(".ac-temp-up");
+const tempDownBtn = document.querySelectorAll(".ac-temp-down");
+
+tempUpBtn.forEach((btn) => {
+	btn.addEventListener("click", increaseTemp);
+});
+
+tempDownBtn.forEach((btn) => {
+	btn.addEventListener("click", decreaseTemp);
+});
+
+function increaseTemp(event) {
+	const clickedBtn = event.currentTarget;
+	const adjustArea = clickedBtn.dataset.area;
+	acTemp.forEach((temp) => {
+		if (temp.dataset.area === adjustArea) {
+			let currentTemp = Number(temp.textContent);
+			if (currentTemp >= 30) {
+				return;
+			} else {
+				currentTemp++;
+				temp.textContent = currentTemp;
+			}
+		}
+	});
+}
+
+function decreaseTemp(event) {
+	const clickedBtn = event.currentTarget;
+	const adjustArea = clickedBtn.dataset.area;
+	acTemp.forEach((temp) => {
+		if (temp.dataset.area === adjustArea) {
+			let currentTemp = Number(temp.textContent);
+			if (currentTemp <= 15) {
+				return;
+			} else {
+				currentTemp--;
+				temp.textContent = currentTemp;
+			}
+		}
+	});
+}

@@ -127,7 +127,6 @@
                         <div class="pa-selection-container">
                             <div class="pa-selection-dropdown-container">
                                 <label for="pa-lib" class="visually-hidden">Select PA Track</label>
-                                <span class="description-ico">🗣️</span>
                                 <select name="pa-lib" id="pa-lib" class="pa-selection-dropdown">
                                     <optgroup label="Hospitality">
                                         <option value="default" selected>select a track to play</option>
@@ -151,8 +150,8 @@
                             </div>
                             <div class="pa-search-container">
                                 <label for="pa-search" class="visually-hidden">Search</label>
-                                <span class="description-ico">🔍</span>
-                                <input type="search" name="pa-search" id="pa-search" class="pa-search-bar">
+                                <input type="search" name="pa-search" id="pa-search" class="pa-search-bar"
+                                    placeholder="🔍">
 
                             </div>
                         </div>
@@ -193,23 +192,27 @@
                                     <div class="ac-fanspeed-container">
                                         <h4 class="ac-ctrl-label">Fan</h4>
                                         <div class="ac-fan-btn-container">
-                                            <button type="button" class="ac-fanspeed-btn"
-                                                id="fan-front-auto">auto</button>
-                                            <button type="button" class="ac-fanspeed-btn" id="fan-front-1">1</button>
-                                            <button type="button" class="ac-fanspeed-btn" id="fan-front-2">2</button>
-                                            <button type="button" class="ac-fanspeed-btn" id="fan-front-3">3</button>
-                                            <button type="button" class="ac-fanspeed-btn"
-                                                id="fan-front-max">max</button>
+                                            <button type="button" class="ac-fanspeed-btn" data-fan="auto"
+                                                data-area="frt">auto</button>
+                                            <button type="button" class="ac-fanspeed-btn" data-fan="1"
+                                                data-area="frt">1</button>
+                                            <button type="button" class="ac-fanspeed-btn" data-fan="2"
+                                                data-area="frt">2</button>
+                                            <button type="button" class="ac-fanspeed-btn" data-fan="3"
+                                                data-area="frt">3</button>
+                                            <button type="button" class="ac-fanspeed-btn" data-fan="max"
+                                                data-area="frt">max</button>
                                         </div>
                                     </div>
                                     <div class="ac-temp-container">
                                         <h4 class="ac-ctrl-label">Temp</h4>
-                                        <div class="ac-temp-value-container"><span class="ac-temp-value">23</span></div>
+                                        <div class="ac-temp-value-container"><span class="ac-temp-value"
+                                                data-area="frt">23</span></div>
                                         <div class="ac-temp-btn-container">
-                                            <button type="button" class="ac-arrow-btn">
+                                            <button type="button" class="ac-arrow-btn ac-temp-up" data-area="frt">
                                                 <img src="img/cabin_page/up-arrow.png" alt="up arrow icon">
                                             </button>
-                                            <button type="button" class="ac-arrow-btn">
+                                            <button type="button" class="ac-arrow-btn ac-temp-down" data-area="frt">
                                                 <img src="img/cabin_page/down-arrow.png" alt="down arrow icon">
                                             </button>
                                         </div>
@@ -224,23 +227,27 @@
                                     <div class="ac-fanspeed-container">
                                         <h4 class="ac-ctrl-label">Fan</h4>
                                         <div class="ac-fan-btn-container">
-                                            <button type="button" class="ac-fanspeed-btn"
-                                                id="fan-middle-auto">auto</button>
-                                            <button type="button" class="ac-fanspeed-btn" id="fan-middle-1">1</button>
-                                            <button type="button" class="ac-fanspeed-btn" id="fan-middle-2">2</button>
-                                            <button type="button" class="ac-fanspeed-btn" id="fan-middle-3">3</button>
-                                            <button type="button" class="ac-fanspeed-btn"
-                                                id="fan-middle-max">max</button>
+                                            <button type="button" class="ac-fanspeed-btn" data-fan="auto"
+                                                data-area="mid">auto</button>
+                                            <button type="button" class="ac-fanspeed-btn" data-fan="1"
+                                                data-area="mid">1</button>
+                                            <button type="button" class="ac-fanspeed-btn" data-fan="2"
+                                                data-area="mid">2</button>
+                                            <button type="button" class="ac-fanspeed-btn" data-fan="3"
+                                                data-area="mid">3</button>
+                                            <button type="button" class="ac-fanspeed-btn" data-fan="max"
+                                                data-area="mid">max</button>
                                         </div>
                                     </div>
                                     <div class="ac-temp-container">
                                         <h4 class="ac-ctrl-label">Temp</h4>
-                                        <div class="ac-temp-value-container"><span class="ac-temp-value">23</span></div>
+                                        <div class="ac-temp-value-container"><span class="ac-temp-value"
+                                                data-area="mid">23</span></div>
                                         <div class="ac-temp-btn-container">
-                                            <button type="button" class="ac-arrow-btn">
+                                            <button type="button" class="ac-arrow-btn ac-temp-up" data-area="mid">
                                                 <img src="img/cabin_page/up-arrow.png" alt="up arrow icon">
                                             </button>
-                                            <button type="button" class="ac-arrow-btn">
+                                            <button type="button" class="ac-arrow-btn ac-temp-down" data-area="mid">
                                                 <img src="img/cabin_page/down-arrow.png" alt="down arrow icon">
                                             </button>
                                         </div>
@@ -255,22 +262,27 @@
                                     <div class="ac-fanspeed-container">
                                         <h4 class="ac-ctrl-label">Fan</h4>
                                         <div class="ac-fan-btn-container">
-                                            <button type="button" class="ac-fanspeed-btn"
-                                                id="fan-aft-auto">auto</button>
-                                            <button type="button" class="ac-fanspeed-btn" id="fan-aft-1">1</button>
-                                            <button type="button" class="ac-fanspeed-btn" id="fan-aft-2">2</button>
-                                            <button type="button" class="ac-fanspeed-btn" id="fan-aft-3">3</button>
-                                            <button type="button" class="ac-fanspeed-btn" id="fan-aft-max">max</button>
+                                            <button type="button" class="ac-fanspeed-btn" data-fan="auto"
+                                                data-area="aft">auto</button>
+                                            <button type="button" class="ac-fanspeed-btn" data-fan="1"
+                                                data-area="aft">1</button>
+                                            <button type="button" class="ac-fanspeed-btn" data-fan="2"
+                                                data-area="aft">2</button>
+                                            <button type="button" class="ac-fanspeed-btn" data-fan="3"
+                                                data-area="aft">3</button>
+                                            <button type="button" class="ac-fanspeed-btn" data-fan="max"
+                                                data-area="aft">max</button>
                                         </div>
                                     </div>
                                     <div class="ac-temp-container">
                                         <h4 class="ac-ctrl-label">Temp</h4>
-                                        <div class="ac-temp-value-container"><span class="ac-temp-value">23</span></div>
+                                        <div class="ac-temp-value-container"><span class="ac-temp-value"
+                                                data-area="aft">23</span></div>
                                         <div class="ac-temp-btn-container">
-                                            <button type="button" class="ac-arrow-btn">
+                                            <button type="button" class="ac-arrow-btn ac-temp-up" data-area="aft">
                                                 <img src="img/cabin_page/up-arrow.png" alt="up arrow icon">
                                             </button>
-                                            <button type="button" class="ac-arrow-btn">
+                                            <button type="button" class="ac-arrow-btn ac-temp-down" data-area="aft">
                                                 <img src="img/cabin_page/down-arrow.png" alt="down arrow icon">
                                             </button>
                                         </div>
