@@ -8,10 +8,6 @@
 	padding: 0;
 }
 
-a {
-	text-decoration: none;
-}
-
 /*-----GLOBAL VARIABLES-----*/
 :root {
 	/* colors */
@@ -32,6 +28,10 @@ html {
 	font-size: 62.5%;
 	font-family: "Noto Sans", sans-serif;
 	background-color: var(--color-alt-background);
+}
+
+a {
+	text-decoration: none;
 }
 
 optgroup {
@@ -60,6 +60,10 @@ input[type="search"] {
 	height: 4rem;
 	border: none;
 	padding: 0 0.5rem;
+}
+
+button {
+	cursor: pointer;
 }
 
 .visually-hidden {
@@ -349,6 +353,11 @@ input[type="search"] {
 	color: var(--color-neutral-constrast);
 }
 
+#airline-code,
+#aircraft {
+	text-transform: uppercase;
+}
+
 .login-btn-container {
 	margin: auto;
 	width: 100%;
@@ -359,7 +368,7 @@ input[type="search"] {
 
 .login-page-btn {
 	background-color: var(--color-analogous);
-	border: 1.5px solid var(--color-analogous);
+	border: none;
 	padding: 0.5rem 1rem;
 	font-size: 2rem;
 	text-transform: uppercase;
@@ -371,12 +380,7 @@ input[type="search"] {
 }
 
 .login-page-btn:hover {
-	border: none;
-}
-
-.login-page-btn:active {
 	background-color: var(--color-complimentary);
-	border: none;
 }
 
 /*-----Dashboard Page-----*/
@@ -800,7 +804,6 @@ input[type="search"] {
 	padding: 0.5rem 1.5rem;
 	border-radius: 1rem;
 	border: none;
-	cursor: pointer;
 }
 
 .cabin-menu-btn:hover {
@@ -998,7 +1001,6 @@ input[type="search"] {
 	border: none;
 	border-radius: 0.5rem;
 	color: var(--color-neutral-constrast);
-	cursor: pointer;
 }
 
 .ac-fanspeed-btn:hover {
@@ -1051,7 +1053,6 @@ input[type="search"] {
 	/* padding: 0.5rem; */
 	border-radius: 0.5rem;
 	border: none;
-	cursor: pointer;
 }
 
 .ac-arrow-btn img {
@@ -1276,11 +1277,6 @@ input[type="search"] {
 	color: var(--color-light-background);
 	border-radius: 0.5rem;
 	padding: 0.2rem 0.5rem;
-}
-
-.ife-clear-seat-btn:hover,
-.ife-clear-seat-btn:active {
-	background-color: var(--color-complimentary);
 }
 
 /* Cabin Page - Shade Section */

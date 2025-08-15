@@ -21,7 +21,7 @@
 
         <header class="top-bar">
             <img class="logo" src="img/logo.png" alt="logo">
-            <a class="account-button" href=""><img class="account-ico" src="img/menu_ico/account.png"
+            <a class="account-button" href="dashboard.html"><img class="account-ico" src="img/menu_ico/account.png"
                     alt="account function icon"></a>
         </header>
 
@@ -30,17 +30,23 @@
                 <h2 class="welcome-msg"><span class="nowrap">Welcome onboard</span> <span class="nowrap">dear
                         crew</span></h2>
                 <div class="login-field-container">
+                    <label for="airline-code">IATA Code</label>
+                    <input type="text" name="airline-code" id="airline-code" required aria-required="true" maxlength="2"
+                        pattern="[A-Za-z]*" placeholder="two letters only">
                     <label for="flt-num">Flight</label>
                     <input type="number" name="flt-num" id="flt-num" required placeholder="numbers only"
                         aria-required="true">
+                    <label for="aircraft">Aircraft</label>
+                    <input type="text" name="aircraft" id="aircraft" required aria-required="true"
+                        placeholder="no space, e.g. A350-800">
                     <label for="login-id">Login ID</label>
                     <input type="text" name="login-id" id="login-id" required aria-required="true">
                     <label for="login-pw">Password</label>
                     <input type="password" name="login-pw" id="login-pw" required aria-required="true">
                 </div>
                 <div class="login-btn-container">
-                    <a href="dashboard.html"><button type="submit" class="login-page-btn">Submit</button></a>
-                    <button type="reset" class="login-page-btn">Reset</button>
+                    <button type="submit" class="login-page-btn" id="login-submit">Submit</button>
+                    <button type="reset" class="login-page-btn" id="login-reset">Reset</button>
                 </div>
             </main>
         </div>
@@ -50,9 +56,7 @@
         </footer>
     </div>
 
-
-
-
+    <script src="js/app.js"></script>
 
 </body>
 

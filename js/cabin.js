@@ -124,9 +124,9 @@ const fanSpeedData = [
 ];
 
 const fanSpeedBtn = document.querySelectorAll(".ac-fanspeed-btn");
-/* fanSpeedBtn.forEach((btn) => {
+fanSpeedBtn.forEach((btn) => {
 	btn.addEventListener("click", setFanSpeed);
-}); */
+});
 
 const updateFanSpeed = () => {
 	fanSpeedBtn.forEach((btn) => {
@@ -152,22 +152,17 @@ const updateFanSpeed = () => {
 
 updateFanSpeed();
 
-/* function setFanSpeed(event) {
+function setFanSpeed(event) {
 	const clickedBtn = event.currentTarget;
 	const fanSpeedArea = clickedBtn.dataset.area;
 	const fanSpeed = clickedBtn.dataset.fan;
-	fanSpeedBtn.forEach((btn) => {
-		if ((btn.dataset.area === fanSpeedArea) & (btn.dataset.fan === fanSpeed)) {
-			btn.classList.add("ac-fanspeed-btn-active");
-		} else if(btn.dataset.){
-
-		}
-		
-		else {
-			btn.classList.remove("ac-fanspeed-btn-active");
-		}
-	});
-} */
+	const targetArea = fanSpeedData.find(
+		(target) => target.area === fanSpeedArea
+	);
+	targetArea.fan = fanSpeed;
+	updateFanSpeed();
+	console.log(`${targetArea.area} fan speed is set to ${fanSpeed}.`);
+}
 
 //Temperature Adjustment
 const acTemp = document.querySelectorAll(".ac-temp-value");
@@ -193,6 +188,7 @@ function increaseTemp(event) {
 			} else {
 				currentTemp++;
 				temp.textContent = currentTemp;
+				console.log(`${adjustArea} temperature is set to ${currentTemp}`);
 			}
 		}
 	});
@@ -209,6 +205,7 @@ function decreaseTemp(event) {
 			} else {
 				currentTemp--;
 				temp.textContent = currentTemp;
+				console.log(`${adjustArea} temperature is set to ${currentTemp}`);
 			}
 		}
 	});
