@@ -353,8 +353,8 @@ button {
 	color: var(--color-neutral-constrast);
 }
 
-#airline-code,
-#aircraft {
+.airline-code,
+.aircraft-type {
 	text-transform: uppercase;
 }
 
