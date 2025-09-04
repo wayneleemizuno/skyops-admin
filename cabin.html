@@ -301,53 +301,40 @@
                         </div>
                         <!-- light class selection -->
                         <div class="section-bar">
-                            <div class="input-label-group">
-                                <input type="radio" id="light-c" name="light-class">
-                                <label for="light-c">Business</label>
-                            </div>
-                            <div class="input-label-group">
-                                <input type="radio" id="light-y" name="light-class">
-                                <label for="light-y">Economy</label>
-                            </div>
+                            <button type="button" class="section-bar-btn" data-section="light-c">Business</button>
+                            <button type="button" class="section-bar-btn" data-section="light-y">Economy</button>
                         </div>
 
                         <!-- c class light control -->
-                        <div class="cabin-light-class-container" id="cabin-light-class-container-c">
-                            <div class="sub-section-bar" id="cabin-light-ctrl-mode-select-container-c">
-                                <div class="input-label-group">
-                                    <input type="radio" id="light-auto-c" name="light-ctrl-mode">
-                                    <label for="light-auto-c">Auto</label>
-                                </div>
-                                <div class="input-label-group">
-                                    <input type="radio" id="light-manual-c" name="light-ctrl-mode">
-                                    <label for="light-manual-c">Manual</label>
+                        <div class="cabin-light-class-container section-bar-item hidden" data-section="light-c">
+                            <div class="sub-section-bar">
+                                <button type="button" class="sub-section-bar-btn"
+                                    data-section="light-auto-c">Auto</button>
+                                <button type="button" class="sub-section-bar-btn"
+                                    data-section="light-manual-c">Manual</button>
+                            </div>
+                            <!-- c class auto mode control -->
+                            <div class="sub-section-bar-item hidden" data-section="light-auto-c">
+                                <div class="light-auto-btn-container">
+                                    <!-- Shared Modes -->
+                                    <button type="button" class="light-auto-btn" data-mode="relax">🧘 Relax 🧘</button>
+                                    <button type="button" class="light-auto-btn" data-mode="arrive">🛬 Arrive
+                                        🛬</button>
+                                    <button type="button" class="light-auto-btn" data-mode="sleep">😴 Sleep 😴</button>
+                                    <button type="button" class="light-auto-btn" data-mode="wake">🌅 Wake 🌅</button>
+                                    <button type="button" class="light-auto-btn" data-mode="bright">💡 Bright
+                                        💡</button>
+                                    <!-- Exclusive to Cabin C -->
+                                    <button type="button" class="light-auto-btn" data-mode="focus">🎯 Focus 🎯</button>
+                                    <button type="button" class="light-auto-btn" data-mode="sunset">🌇 Sunset
+                                        🌇</button>
+                                    <button type="button" class="light-auto-btn" data-mode="cinema">🎬 Cinema
+                                        🎬</button>
                                 </div>
                             </div>
 
-                            <div class="cabin-light-auto-container" id="cabin-light-auto-container-c">
-                                <div class="input-label-group">
-                                    <input type="radio" id="light-auto-relax-c" name="light-auto">
-                                    <label for="light-auto-relax-c">Relaxing</label>
-                                </div>
-                                <div class="input-label-group">
-                                    <input type="radio" id="light-auto-arrive-c" name="light-auto">
-                                    <label for="light-auto-arrive-c">Arrival</label>
-                                </div>
-                                <div class="input-label-group">
-                                    <input type="radio" id="light-auto-sleep-c" name="light-auto">
-                                    <label for="light-auto-sleep-c">Sleep</label>
-                                </div>
-                                <div class="input-label-group">
-                                    <input type="radio" id="light-auto-wake-c" name="light-auto">
-                                    <label for="light-auto-wake-c">Wake-Up</label>
-                                </div>
-                                <div class="input-label-group">
-                                    <input type="radio" id="light-auto-bright-c" name="light-auto">
-                                    <label for="light-auto-bright-c">Bright</label>
-                                </div>
-                            </div>
-
-                            <div class="cabin-light-manual-container" id="cabin-light-manual-container-c">
+                            <!-- c class manual mode control -->
+                            <div class="sub-section-bar-item hidden" data-section="light-manual-c">
                                 <div class="slide-ctrl-container" id="cabin-light-color-temp-container-c">
                                     <div class="light-manual-label-group">
                                         <label for="color-temp-c">Colour Temp</label>
@@ -376,42 +363,34 @@
                             </div>
                         </div>
                         <!-- y class light control -->
-                        <div class="cabin-light-class-container" id="cabin-light-class-container-y">
-                            <div class="sub-section-bar" id="cabin-light-ctrl-mode-select-container-y">
-                                <div class="input-label-group">
-                                    <input type="radio" id="light-auto-y" name="light-ctrl-mode">
-                                    <label for="light-auto-y">Auto</label>
-                                </div>
-                                <div class="input-label-group">
-                                    <input type="radio" id="light-manual-y" name="light-ctrl-mode">
-                                    <label for="light-manual-y">Manual</label>
+                        <div class="cabin-light-class-container section-bar-item hidden" data-section="light-y">
+                            <div class="sub-section-bar">
+                                <button type="button" class="sub-section-bar-btn"
+                                    data-section="light-auto-y">Auto</button>
+                                <button type="button" class="sub-section-bar-btn"
+                                    data-section="light-manual-y">Manual</button>
+                            </div>
+                            <!-- y class auto mode control -->
+                            <div class="sub-section-bar-item hidden" data-section="light-auto-y">
+                                <div class="light-auto-btn-container">
+                                    <!-- Shared Modes -->
+                                    <button type="button" class="light-auto-btn" data-mode="relax">🧘 Relax 🧘</button>
+                                    <button type="button" class="light-auto-btn" data-mode="arrive">🛬 Arrive
+                                        🛬</button>
+                                    <button type="button" class="light-auto-btn" data-mode="sleep">😴 Sleep 😴</button>
+                                    <button type="button" class="light-auto-btn" data-mode="wake">🌅 Wake 🌅</button>
+                                    <button type="button" class="light-auto-btn" data-mode="bright">💡 Bright
+                                        💡</button>
+                                    <!-- Exclusive to Cabin Y -->
+                                    <button type="button" class="light-auto-btn" data-mode="energize">⚡ Energy
+                                        ⚡</button>
+                                    <button type="button" class="light-auto-btn" data-mode="party">🎉 Party 🎉</button>
+                                    <button type="button" class="light-auto-btn" data-mode="reading">📖 Read 📖</button>
                                 </div>
                             </div>
 
-                            <div class="cabin-light-auto-container" id="cabin-light-auto-container-y">
-                                <div class="input-label-group">
-                                    <input type="radio" id="light-auto-relax-y" name="light-auto">
-                                    <label for="light-auto-relax-y">Relaxing</label>
-                                </div>
-                                <div class="input-label-group">
-                                    <input type="radio" id="light-auto-arrive-y" name="light-auto">
-                                    <label for="light-auto-arrive-y">Arrival</label>
-                                </div>
-                                <div class="input-label-group">
-                                    <input type="radio" id="light-auto-sleep-y" name="light-auto">
-                                    <label for="light-auto-sleep-y">Sleep</label>
-                                </div>
-                                <div class="input-label-group">
-                                    <input type="radio" id="light-auto-wake-y" name="light-auto">
-                                    <label for="light-auto-wake-y">Wake-Up</label>
-                                </div>
-                                <div class="input-label-group">
-                                    <input type="radio" id="light-auto-bright-y" name="light-auto">
-                                    <label for="light-auto-bright-y">Bright</label>
-                                </div>
-                            </div>
-
-                            <div class="cabin-light-manual-container" id="cabin-light-manual-container-y">
+                            <!-- y class manual mode control -->
+                            <div class="sub-section-bar-item hidden" data-section="light-manual-y">
                                 <div class="slide-ctrl-container" id="cabin-light-color-temp-container-y">
                                     <div class="light-manual-label-group">
                                         <label for="color-temp-y">Colour Temp</label>
@@ -494,17 +473,12 @@
                             </div>
                             <!-- select IFE global or Individual seat control -->
                             <div class="section-bar">
-                                <div class="input-label-group">
-                                    <input type="radio" id="ife-global" name="ife-mode">
-                                    <label for="ife-global">Global</label>
-                                </div>
-                                <div class="input-label-group">
-                                    <input type="radio" id="ife-individual" name="ife-mode">
-                                    <label for="ife-individual">Individual</label>
-                                </div>
+                                <button type="button" class="section-bar-btn" data-section="global">Global</button>
+                                <button type="button" class="section-bar-btn"
+                                    data-section="individual">Individual</button>
                             </div>
                             <!-- IFE Global Control -->
-                            <div class="ife-section-container" id="ife-global-section">
+                            <div class="ife-section-container section-bar-item hidden" data-section="global">
                                 <h3>Global Control</h3>
                                 <div class="ife-ctrl-item-container">
                                     <label for="ife-media-pack" class="ife-ctrl-item-label">Media Pack</label>
@@ -539,7 +513,7 @@
                                 </div>
                                 <!-- IFE Individual Control -->
                             </div>
-                            <div class="ife-section-container" id="ife-individual-section">
+                            <div class="ife-section-container section-bar-item hidden" data-section="individual">
                                 <h3>Individual Control</h3>
                                 <div class="ife-ctrl-item-container">
                                     <ul class="ife-individual-ctrl-instruction">
@@ -571,26 +545,16 @@
                         </div>
                         <!-- Shade Control Class selection -->
                         <div class="section-bar">
-                            <div class="input-label-group">
-                                <input type="radio" id="shade-c" name="shade-class">
-                                <label for="shade-c">Business</label>
-                            </div>
-                            <div class="input-label-group">
-                                <input type="radio" id="shade-y" name="shade-class">
-                                <label for="shade-y">Economy</label>
-                            </div>
+                            <button type="button" class="section-bar-btn" data-section="shade-c">Business</button>
+                            <button type="button" class="section-bar-btn" data-section="shade-y">Economy</button>
                         </div>
                         <!-- Business Class Shade Control -->
-                        <div class="cabin-shade-class-container" id="cabin-shade-class-container-c">
-                            <div class="sub-section-bar" id="cabin-shade-ctrl-mode-select-container-c">
-                                <div class="input-label-group">
-                                    <input type="radio" id="shade-auto-c" name="shade-ctrl-mode">
-                                    <label for="shade-auto-c">Auto</label>
-                                </div>
-                                <div class="input-label-group">
-                                    <input type="radio" id="shade-manual-c" name="shade-ctrl-mode">
-                                    <label for="shade-manual-c">Manual</label>
-                                </div>
+                        <div class="cabin-shade-class-container">
+                            <div class="sub-section-bar">
+                                <button type="button" class="sub-section-bar-btn"
+                                    data-section="shade-auto-c">Auto</button>
+                                <button type="button" class="sub-section-bar-btn"
+                                    data-section="shade-manual-c">Manual</button>
                             </div>
 
                             <div class="cabin-shade-auto-container" id="cabin-shade-auto-container-c">

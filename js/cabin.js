@@ -3,12 +3,11 @@ const cabinMenuBtn = document.querySelectorAll(".cabin-menu-btn");
 
 /* The event listener automatically passes an event object to the function, which contains information about the click event and the element that was clicked. */
 cabinMenuBtn.forEach((btn) => {
-	btn.addEventListener("click", toggleSection);
+	btn.addEventListener("click", toggleCabinSection);
 });
 
-//TOGGLE SECTION ON/OFF
-function toggleSection(event) {
-	/* 'event.currentTarget' refers to the button that was actually clicked, ensuring we are handling the correct element even if event bubbling occurs. */
+//TOGGLE CABIN SECTION
+function toggleCabinSection(event) {
 	const clickedBtn = event.currentTarget;
 	cabinMenuBtn.forEach((btn) => {
 		if (btn === clickedBtn) {
@@ -17,15 +16,10 @@ function toggleSection(event) {
 			btn.classList.remove("cabin-menu-btn-active");
 		}
 	});
-	/* Access the custom data attribute 'data-section' of the clicked button. This lets us know which section the button corresponds to. */
-	const clickedBtnData = clickedBtn.dataset.section;
 
-	/* Select all sections with the class "cabin-section" to show or hide them accordingly. */
+	const clickedBtnData = clickedBtn.dataset.section;
 	const cabinSection = document.querySelectorAll(".cabin-section");
 
-	/* Loop through each section and compare its 'data-section' value with the clicked button's.
-	   If they match, remove the 'hidden' class to show the section.
-	   If not, add the 'hidden' class to hide the section. */
 	cabinSection.forEach((section) => {
 		if (section.dataset.section === clickedBtnData) {
 			section.classList.remove("hidden");
@@ -33,7 +27,63 @@ function toggleSection(event) {
 	});
 }
 
-// PA SECTION
+// TOGGLE SECTION BAR ITEM
+const sectionBarBtn = document.querySelectorAll(".section-bar-btn");
+sectionBarBtn.forEach((btn) => {
+	btn.addEventListener("click", toggleSectionBarItem);
+});
+
+function toggleSectionBarItem(event) {
+	const clickedBtn = event.currentTarget;
+	const sectionBarItemBtn = document.querySelectorAll(".section-bar-btn");
+	sectionBarItemBtn.forEach((btn) => {
+		if (btn === clickedBtn) {
+			btn.classList.add("section-bar-btn-active");
+		} else {
+			btn.classList.remove("section-bar-btn-active");
+		}
+	});
+
+	const clickedBtnData = clickedBtn.dataset.section;
+	const sectionBarItem = document.querySelectorAll(".section-bar-item");
+
+	sectionBarItem.forEach((section) => {
+		if (section.dataset.section === clickedBtnData) {
+			section.classList.remove("hidden");
+		} else section.classList.add("hidden");
+	});
+}
+
+// TOGGLE SUB-SECTION BAR ITEM
+const subSectionBarBtn = document.querySelectorAll(".sub-section-bar-btn");
+subSectionBarBtn.forEach((btn) => {
+	btn.addEventListener("click", toggleSubSectionBarItem);
+});
+
+function toggleSubSectionBarItem(event) {
+	const clickedBtn = event.currentTarget;
+	const subSectionBarItemBtn = document.querySelectorAll(
+		".sub-section-bar-btn"
+	);
+	subSectionBarItemBtn.forEach((btn) => {
+		if (btn === clickedBtn) {
+			btn.classList.add("sub-section-bar-btn-active");
+		} else {
+			btn.classList.remove("sub-section-bar-btn-active");
+		}
+	});
+
+	const clickedBtnData = clickedBtn.dataset.section;
+	const subSectionBarItem = document.querySelectorAll(".sub-section-bar-item");
+
+	subSectionBarItem.forEach((section) => {
+		if (section.dataset.section === clickedBtnData) {
+			section.classList.remove("hidden");
+		} else section.classList.add("hidden");
+	});
+}
+
+/* PA SECTION */
 const paTracks = [
 	{
 		group: "hospitality",
@@ -115,12 +165,12 @@ paLib.addEventListener("change", (event) => {
 	}
 });
 
-// AC SECTION
+/* AC SECTION */
 //Fan Speed Adjustment
 const fanSpeedData = [
 	{ area: "frt", fan: "auto" },
-	{ area: "mid", fan: "2" },
-	{ area: "aft", fan: "max" },
+	{ area: "mid", fan: "auto" },
+	{ area: "aft", fan: "auto" },
 ];
 
 const fanSpeedBtn = document.querySelectorAll(".ac-fanspeed-btn");
@@ -210,3 +260,7 @@ function decreaseTemp(event) {
 		}
 	});
 }
+
+/* MUSIC SECTION */
+
+/* IFE SECTION */
